@@ -1,0 +1,71 @@
+=== HEAD(10) ===
+   id first_name  last_name                                  email  gender  part_time_job  absence_days  extracurricular_activities  weekly_self_study_hours   career_aspiration  math_score  history_score  physics_score  chemistry_score  biology_score  english_score  geography_score
+0   1       Paul      Casey         paul.casey.1@gslingacademy.com    male          False             3                       False                       27              Lawyer          73             81             93               97             63             80               87
+1   2   Danielle   Sandoval  danielle.sandoval.2@gslingacademy.com  female          False             2                       False                       47              Doctor          90             86             96              100             90             88               90
+2   3       Tina    Andrews       tina.andrews.3@gslingacademy.com  female          False             9                        True                       13  Government Officer          81             97             95               96             65             77               94
+3   4       Tara      Clark         tara.clark.4@gslingacademy.com  female          False             5                       False                        3              Artist          71             74             88               80             89             63               86
+4   5    Anthony     Campos     anthony.campos.5@gslingacademy.com    male          False             5                       False                       10             Unknown          84             77             65               65             80             74               76
+5   6      Kelly       Wade         kelly.wade.6@gslingacademy.com  female          False             2                       False                       26             Unknown          93            100             67               78             72             80               84
+6   7    Anthony      Smith      anthony.smith.7@gslingacademy.com    male          False             3                        True                       23   Software Engineer          99             96             97               73             88             76               64
+7   8     George      Short       george.short.8@gslingacademy.com    male           True             2                        True                       34   Software Engineer          95             95             82               63             84             70               85
+8   9    Stanley  Gutierrez  stanley.gutierrez.9@gslingacademy.com    male          False             6                       False                       25             Unknown          94             68             94               85             81             74               72
+9  10     Audrey    Simpson    audrey.simpson.10@gslingacademy.com  female          False             3                        True                       18             Teacher          98             69             88               71             67             71               73
+
+=== SHAPE ===
+rows: 2000, cols: 17
+
+=== MISSING VALUES PER COLUMN ===
+id                            0
+first_name                    0
+last_name                     0
+email                         0
+gender                        0
+part_time_job                 0
+absence_days                  0
+extracurricular_activities    0
+weekly_self_study_hours       0
+career_aspiration             0
+math_score                    0
+history_score                 0
+physics_score                 0
+chemistry_score               0
+biology_score                 0
+english_score                 0
+geography_score               0
+
+=== INFO ===
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 2000 entries, 0 to 1999
+Data columns (total 17 columns):
+ #   Column                      Non-Null Count  Dtype 
+---  ------                      --------------  ----- 
+ 0   id                          2000 non-null   int64 
+ 1   first_name                  2000 non-null   object
+ 2   last_name                   2000 non-null   object
+ 3   email                       2000 non-null   object
+ 4   gender                      2000 non-null   object
+ 5   part_time_job               2000 non-null   bool  
+ 6   absence_days                2000 non-null   int64 
+ 7   extracurricular_activities  2000 non-null   bool  
+ 8   weekly_self_study_hours     2000 non-null   int64 
+ 9   career_aspiration           2000 non-null   object
+ 10  math_score                  2000 non-null   int64 
+ 11  history_score               2000 non-null   int64 
+ 12  physics_score               2000 non-null   int64 
+ 13  chemistry_score             2000 non-null   int64 
+ 14  biology_score               2000 non-null   int64 
+ 15  english_score               2000 non-null   int64 
+ 16  geography_score             2000 non-null   int64 
+dtypes: bool(2), int64(10), object(5)
+memory usage: 238.4+ KB
+
+=== DESCRIBE (numeric) ===
+                id  absence_days  weekly_self_study_hours   math_score  history_score  physics_score  chemistry_score  biology_score  english_score  geography_score
+count  2000.000000   2000.000000              2000.000000  2000.000000    2000.000000    2000.000000      2000.000000     2000.00000    2000.000000      2000.000000
+mean   1000.500000      3.665500                17.755500    83.452000      80.332000      81.336500        79.995000       79.58150      81.277500        80.888000
+std     577.494589      2.629271                12.129604    13.224906      12.736046      12.539453        12.777895       13.72219      12.027087        11.637705
+min       1.000000      0.000000                 0.000000    40.000000      50.000000      50.000000        50.000000       30.00000      50.000000        60.000000
+25%     500.750000      2.000000                 5.000000    77.000000      69.750000      71.000000        69.000000       69.00000      72.000000        71.000000
+50%    1000.500000      3.000000                18.000000    87.000000      82.000000      83.000000        81.000000       81.00000      83.000000        81.000000
+75%    1500.250000      5.000000                28.000000    93.000000      91.000000      92.000000        91.000000       91.00000      91.000000        91.000000
+max    2000.000000     10.000000                50.000000   100.000000     100.000000     100.000000       100.000000      100.00000      99.000000       100.000000
