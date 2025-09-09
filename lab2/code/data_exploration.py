@@ -72,7 +72,7 @@ EMAIL = re.compile(r"\b[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}\b")
 OFFICE= re.compile(r"office\s*hours?\s*[:\-]?\s*([^\n\r]+)", re.I)
 
 #Read all text from a PDF using PyPDF2.
-def _read_pdf_text(pdf_path: Path) -> str:
+def read_pdf_text(pdf_path: Path) -> str:
     try:
         reader = PdfReader(str(pdf_path))
         return "\n".join([(p.extract_text() or "") for p in reader.pages])
@@ -82,14 +82,14 @@ def _read_pdf_text(pdf_path: Path) -> str:
 
 
 #HW check
-def _is_homework(filename: str, text: str) -> bool:
+def is_homework(filename: str, text: str) -> bool:
     name = filename.lower()
     t = text.lower()
     return name.startswith("hw") or "homework" in t or re.search(r"\bhw\s*\d+\b", t) is not None
 
 
 #Pull three things for homework pdf due date,no of problems and points
-def _extract_hw_fields(text: str):
+def extract_hw_fields(text: str):
     # due date
     due = ""
     m_due_line = re.search(r"(due\s*(?:by|date|:|-)\s*)(.+)", text, re.I)
@@ -119,7 +119,7 @@ def _extract_hw_fields(text: str):
     return due, pts, probs
 
 #Common stuff like, email,office hours etc
-def _extract_common_meta(text: str):
+def extract_common_meta(text: str):
     emails = "; ".join(sorted(set(EMAIL.findall(text)))[:10])
     m_off = OFFICE.search(text)
     office = (m_off.group(1).strip() if m_off else "")
@@ -136,11 +136,11 @@ def explore_pdfs_min(data_dir: Path) -> Path:
         w.writerow(["file","type","due_date","total_points","num_problems","emails","office_hours","preview"])
 
         for p in pdfs:
-            txt = _read_pdf_text(p)
+            txt = read_pdf_text(p)
 
             # homework vs syllabus vs other pdfs
             lower_text = txt.lower()
-            if _is_homework(p.name, txt):
+            if is_homework(p.name, txt):
                 typ = "homework"
             elif "office hours" in lower_text or "syllabus" in lower_text or "course schedule" in lower_text:
                 typ = "syllabus"
@@ -149,11 +149,11 @@ def explore_pdfs_min(data_dir: Path) -> Path:
 
             # fields
             if typ == "homework":
-                due, pts, probs = _extract_hw_fields(txt)
+                due, pts, probs = extract_hw_fields(txt)
             else:
                 due, pts, probs = "", "", ""
 
-            emails, office = _extract_common_meta(txt)
+            emails, office = extract_common_meta(txt)
             preview = " ".join(txt.split())[:180]  # tiny sanity check of content
 
             w.writerow([p.name, typ, due, pts, probs, emails, office, preview])
