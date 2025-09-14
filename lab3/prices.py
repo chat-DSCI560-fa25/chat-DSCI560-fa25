@@ -3,6 +3,8 @@ from datetime import datetime
 from typing import List, Tuple
 import pandas as pd
 import yfinance as yf
+from preprocessing import preprocess_stock_data
+
 
 from db_config import get_connection
 
@@ -101,6 +103,15 @@ def fetch_and_store_for_portfolio(pid: int, start: str, end: str) -> Tuple[int, 
     if not symbols:
         print("This portfolio has no stocks. Add some first.")
         return (0, 0)
+    df = fetch_prices(symbols, start, end)
+    if df.empty:
+        print("No data returned (check dates or symbols).")
+        return (0, 0)
+
+    df = preprocess_stock_data(df)
+
+    return upsert_prices(df[['symbol', 'dt', 'open', 'high', 'low', 'close', 'volume']])
+
     df = fetch_prices(symbols, start, end)
     if df.empty:
         print("No data returned (check dates or symbols).")
