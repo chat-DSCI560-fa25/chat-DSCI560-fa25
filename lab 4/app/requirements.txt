@@ -1,0 +1,9 @@
+Flask==3.0.3
+gunicorn==22.0.0
+python-dotenv==1.0.1
+mysql-connector-python==9.0.0
+pandas==2.2.2
+numpy==2.1.1
+yfinance==0.2.43
+statsmodels==0.14.2
+scikit-learn==1.5.1
