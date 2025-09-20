@@ -11,6 +11,25 @@ The model:
 
 ---
 
+### 3. Trade Execution
+- On a **buy signal**, the model allocates available cash equally across all tickers generating a signal that day.
+- On a **sell signal**, the model liquidates the position in that ticker.
+- Portfolio value is updated daily to reflect cash and the market value of all open positions.
+
+---
+
+### 4. Risk Management
+While the base model does not include stop‑loss or take‑profit orders, it inherently manages risk by:
+- Only entering trades in the direction of the prevailing trend.
+- Avoiding overbought entries and oversold exits.
+- Staying in cash when no valid signals are present.
+
+You can extend the model with:
+- **ATR‑based stops** for volatility‑adjusted exits.
+- **Position sizing** based on volatility or fixed risk per trade.
+
+---
+
 ## Inputs
 
 | Parameter | Description |
