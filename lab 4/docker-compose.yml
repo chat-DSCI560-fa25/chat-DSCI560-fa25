@@ -4,12 +4,15 @@ services:
       context: .
     container_name: lab4_web
     env_file: .env
+    working_dir: /app        
     ports:
       - "5000:5000"
     volumes:
-      - ./app:/app/app
+      - ./app:/app     
     depends_on:
       - db
+    command: python -m flask run --host=$FLASK_RUN_HOST --port=$FLASK_RUN_PORT
+    
 
   db:
     image: mysql:8.0

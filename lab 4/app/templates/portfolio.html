@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Manage Stocks – {{ pname }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root { --border:#e5e7eb; --muted:#6b7280; --bg:#fafafa; --primary:#0d6efd; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; margin: 24px; }
+    a { color: var(--primary); text-decoration: none; }
+    .bar { display:flex; gap:12px; align-items:center; justify-content:space-between; margin: 8px 0 16px; }
+    .btn { border:1px solid var(--border); border-radius:10px; padding:8px 14px; background:#fff; cursor:pointer; }
+    .btn.primary { background: var(--primary); border-color: var(--primary); color:#fff; }
+    .card { border:1px solid var(--border); border-radius:12px; padding:16px; background:#fff; }
+    table { width:100%; border-collapse:collapse; }
+    th, td { text-align:left; padding:10px; border-bottom:1px solid var(--border); }
+    th { background: var(--bg); font-weight:600; }
+    .muted { color: var(--muted); font-size: 12px; }
+    .row { display:flex; gap:8px; align-items:center; }
+    input[type=text]{ padding:8px 10px; border:1px solid var(--border); border-radius:8px; }
+  </style>
+</head>
+<body>
+  <div class="bar">
+    <div>
+      <a href="/">&larr; Back</a>
+      <h2 style="margin:8px 0 0;">Manage Stocks — {{ pname }} (PID {{ pid }})</h2>
+      <div class="muted">Add or remove tickers from this portfolio.</div>
+    </div>
+    <div class="row">
+      <input id="inSym" type="text" placeholder="Ticker (e.g., AAPL)" />
+      <button id="btnAdd" class="btn primary">Add Stock</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <table>
+      <thead>
+        <tr>
+          <th style="width:200px;">Symbol</th>
+          <th>Added</th>
+          <th style="width:160px;">Actions</th>
+        </tr>
+      </thead>
+      <tbody id="tbodyStocks">
+        <tr><td colspan="3" class="muted">Loading…</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    const pid = {{ pid|tojson }};
+    async function loadStocks(){
+      const res = await fetch(`/api/portfolio/${pid}/stocks`);
+      const items = await res.json();
+      const body = document.getElementById('tbodyStocks');
+      body.innerHTML = '';
+      if(!items.length){
+        body.innerHTML = '<tr><td colspan="3" class="muted">No stocks yet. Add one above.</td></tr>';
+        return;
+      }
+      for(const s of items){
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td><strong>${s.symbol}</strong></td>
+          <td>${(s.added_at || '').replace('T',' ')}</td>
+          <td>
+            <button class="btn" data-del="${s.symbol}">Remove</button>
+          </td>`;
+        body.appendChild(tr);
+      }
+      body.querySelectorAll('button[data-del]').forEach(btn=>{
+        btn.addEventListener('click', async (e)=>{
+          const sym = e.currentTarget.getAttribute('data-del');
+          if(!confirm('Remove ' + sym + ' from this portfolio?')) return;
+          const res = await fetch(`/api/portfolio/${pid}/stocks`, {
+            method:'DELETE',
+            headers:{'Content-Type':'application/json'},
+            body: JSON.stringify({ symbol: sym })
+          });
+          if(!res.ok){
+            const err = await res.json().catch(()=>({error:'Failed'}));
+            alert('Error: ' + (err.error || res.statusText));
+            return;
+          }
+          await loadStocks();
+        });
+      });
+    }
+
+    document.getElementById('btnAdd').addEventListener('click', async ()=>{
+      const sym = document.getElementById('inSym').value.trim();
+      if(!sym){ alert('Enter a ticker'); return; }
+      const res = await fetch(`/api/portfolio/${pid}/stocks`, {
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body: JSON.stringify({ symbol: sym })
+      });
+      if(!res.ok){
+        const err = await res.json().catch(()=>({error:'Failed'}));
+        alert('Error: ' + (err.error || res.statusText));
+        return;
+      }
+      document.getElementById('inSym').value = '';
+      await loadStocks();
+    });
+
+    loadStocks();
+  </script>
+</body>
+</html>
