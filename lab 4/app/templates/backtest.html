@@ -25,6 +25,18 @@
     th { background: var(--bg); font-weight:600; }
     .alert { background:#fff7ed; border:1px solid #fed7aa; color:#9a3412; padding:10px 12px; border-radius:10px; margin:10px 0; display:none; }
     @media (max-width: 820px){ .kpis { grid-template-columns: 1fr; } }
+    .guidance-box {
+    font-size: 12px;
+    padding: 10px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    background: #fafafa;
+    color: #6b7280;
+    margin-top: 10px;
+    display: none; 
+  }
+
+
   </style>
 </head>
 <body>
@@ -41,16 +53,22 @@
   <label for="strategy">Strategy</label>
   <select id="strategy">
     <option value="sma" selected>SMA Crossover</option>
+    <option value="consensus">Consensus Scoring</option>
+    <option value="ema_rsi">EMA + RSI Crossover</option> </select>
   </select>
 </div>
-<div>
-  <label for="smaShort">SMA Short</label>
-  <input id="smaShort" type="number" min="2" step="1" value="10" />
+
+<div id="smaParams">
+  <div>
+    <label for="smaShort">SMA Short</label>
+    <input id="smaShort" type="number" min="2" step="1" value="10" />
+  </div>
+  <div>
+    <label for="smaLong">SMA Long</label>
+    <input id="smaLong" type="number" min="3" step="1" value="30" />
+  </div>
 </div>
-<div>
-  <label for="smaLong">SMA Long</label>
-  <input id="smaLong" type="number" min="3" step="1" value="30" />
-</div>
+<div id="strategyGuidance" class="guidance-box"></div>
       <div>
         <label for="start">Start</label>
         <input id="start" type="date" />
@@ -76,7 +94,7 @@
   <div id="err" class="alert"></div>
 
   <div class="card">
-    <div class="kpis">
+<div class="kpis">
     <div class="kpi">
       <div class="label">Portfolio Value</div>
       <div id="kpiValue" class="value">$–</div>
@@ -90,12 +108,36 @@
       <div id="kpiReturn" class="value">–%</div>
     </div>
     <div class="kpi">
-      <div class="label">Sharpe Ratio</div>
-      <div id="kpiSharpe" class="value">–</div>
+      <div class="label">CAGR</div>
+      <div id="kpiCagr" class="value">–%</div>
     </div>
     <div class="kpi">
       <div class="label">Max Drawdown</div>
       <div id="kpiDrawdown" class="value">–%</div>
+    </div>
+    <div class="kpi">
+      <div class="label">Sharpe Ratio</div>
+      <div id="kpiSharpe" class="value">–</div>
+    </div>
+    <div class="kpi">
+      <div class="label">Sortino Ratio</div>
+      <div id="kpiSortino" class="value">–</div>
+    </div>
+    <div class="kpi">
+      <div class="label">Calmar Ratio</div>
+      <div id="kpiCalmar" class="value">–</div>
+    </div>
+    <div class="kpi">
+        <div class="label">Win Rate</div>
+        <div id="kpiWinRate" class="value">–%</div>
+    </div>
+    <div class="kpi">
+        <div class="label">Profit Factor</div>
+        <div id="kpiProfitFactor" class="value">–</div>
+    </div>
+    <div class="kpi">
+        <div class="label">Avg Win/Loss</div>
+        <div id="kpiWinLoss" class="value">–</div>
     </div>
 </div>
   </div>
@@ -138,6 +180,31 @@
 
   
   <script>
+
+    function updateUIForStrategy() {
+    const strategy = document.getElementById('strategy').value;
+    const smaParamsDiv = document.getElementById('smaParams');
+    const guidanceDiv = document.getElementById('strategyGuidance');
+
+    if (strategy === 'sma') {
+      smaParamsDiv.style.display = 'block';
+      const longPeriod = document.getElementById('smaLong').value;
+      guidanceDiv.textContent = `For effective results, select a date range longer than your 'SMA Long' period (e.g., > ${longPeriod} days).`;
+      guidanceDiv.style.display = 'block';
+    } else if (strategy === 'consensus') {
+      smaParamsDiv.style.display = 'none';
+      guidanceDiv.textContent = 'This strategy uses a 200-day trend filter. For the filter to be active, select a date range of at least one year.';
+      guidanceDiv.style.display = 'block';
+    } else if (strategy === 'ema_rsi') {
+      smaParamsDiv.style.display = 'none';
+      guidanceDiv.textContent = "This strategy's longest indicator is a 30-day EMA. For best results, select a date range longer than 30 days.";
+      guidanceDiv.style.display = 'block';
+    }  
+    else {
+      smaParamsDiv.style.display = 'none';
+      guidanceDiv.style.display = 'none';
+    }
+  }
     (async function init(){
       // load portfolios 
       await loadPortfolios();
@@ -173,7 +240,11 @@
         }
         return res;
       };
+      document.getElementById('strategy').addEventListener('change', updateUIForStrategy);
+      updateUIForStrategy();
+
     })();
+
   </script>
 </body>
 </html>

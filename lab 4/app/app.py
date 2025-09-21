@@ -1,4 +1,3 @@
-# app.py (Updated for Session Management)
 from __future__ import annotations
 from datetime import date
 from math import floor
@@ -11,7 +10,7 @@ import mysql.connector
 import os
 import pyarrow.parquet as pq
 from backtest import fetch_and_store_prices
-from strategies import sma
+from strategies import sma,consensus,ema_rsi
 import engine
 
 #env-based config (MYSQL_HOST, MYSQL_DB, etc.)
@@ -200,6 +199,27 @@ def api_run():
             strategy_logic=sma,
             strategy_params=sma_params
         )
+    elif strategy_name == "consensus":
+        res = engine.run_backtest(
+            symbols=symbols,
+            start_date=start,
+            end_date=end,
+            cash_start=cash_start,
+            price_loader=load_prices_from_parquet,
+            strategy_logic=consensus,
+            strategy_params={} 
+        )
+    
+    elif strategy_name == "ema_rsi":
+        res = engine.run_backtest(
+            symbols=symbols,
+            start_date=start,
+            end_date=end,
+            cash_start=cash_start,
+            price_loader=load_prices_from_parquet,
+            strategy_logic=ema_rsi,
+            strategy_params={} 
+    )    
 
     app.logger.info("Backtest complete. Returning results to UI.")
     return jsonify(res)

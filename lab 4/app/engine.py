@@ -68,10 +68,26 @@ def run_backtest(symbols: list[str], start_date: str, end_date: str, cash_start:
                     positions[symbol] = 0
                     trades.append({"date": date.strftime('%Y-%m-%d'), "symbol": symbol, "side": "SELL", "qty": shares_to_sell, "price": current_price})
 
+ 
                 elif signal == 1:
-                    investment_per_trade = 1000.0
-                    if cash >= investment_per_trade:
-                        shares_to_buy = int(investment_per_trade / current_price)
+                   
+                    base_investment = total_value * 0.10
+
+                    
+                    current_rsi = signal_row['rsi_14']
+
+
+                    conviction_multiplier = 1.0
+                    if current_rsi > 50:
+                       
+                        bonus = min((current_rsi - 50) / 20, 1.0)
+                        conviction_multiplier += bonus
+
+                   
+                    investment_amount = base_investment * conviction_multiplier
+                    
+                    if cash >= investment_amount:
+                        shares_to_buy = int(investment_amount / current_price)
                         cost = shares_to_buy * current_price
                         if shares_to_buy > 0:
                             cash -= cost
@@ -83,8 +99,9 @@ def run_backtest(symbols: list[str], start_date: str, end_date: str, cash_start:
     total_pnl = final_portfolio_value - cash_start
     
     
-    advanced_kpis = calculate_kpis(daily_portfolio_value, cash_start)
-    
+    #advanced_kpis = calculate_kpis(daily_portfolio_value, cash_start)
+    advanced_kpis = calculate_kpis(daily_portfolio_value, cash_start, trades)
+
     final_positions = []
     last_prices = prices_df.iloc[-1]
     for symbol, qty in positions.items():
@@ -95,11 +112,17 @@ def run_backtest(symbols: list[str], start_date: str, end_date: str, cash_start:
 
     
     all_kpis = {
-        "portfolio_value": round(final_portfolio_value, 2),
-        "total_pnl": round(total_pnl, 2),
-        "return_pct": advanced_kpis["total_return_pct"],
-        "sharpe_ratio": advanced_kpis["sharpe_ratio"],
-        "max_drawdown_pct": advanced_kpis["max_drawdown_pct"]
+    "portfolio_value": round(final_portfolio_value, 2),
+    "total_pnl": round(total_pnl, 2),
+    "return_pct": advanced_kpis["total_return_pct"],
+    "cagr_pct": advanced_kpis["cagr_pct"],
+    "sharpe_ratio": advanced_kpis["sharpe_ratio"],
+    "sortino_ratio": advanced_kpis["sortino_ratio"],
+    "max_drawdown_pct": advanced_kpis["max_drawdown_pct"],
+    "calmar_ratio": advanced_kpis["calmar_ratio"],
+    "profit_factor": advanced_kpis["profit_factor"],
+    "win_rate_pct": advanced_kpis["win_rate_pct"],
+    "avg_win_loss_ratio": advanced_kpis["avg_win_loss_ratio"],
     }
 
     return { "kpis": all_kpis, "positions": final_positions, "trades": trades }

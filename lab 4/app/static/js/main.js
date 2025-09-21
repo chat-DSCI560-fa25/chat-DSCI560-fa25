@@ -100,9 +100,15 @@ async function runBacktest() {
     if (el('kpiValue')) el('kpiValue').textContent = `$${fmt(k.portfolio_value)}`;
     if (el('kpiTotal')) el('kpiTotal').textContent = `$${fmt(k.total_pnl)}`;
     if (el('kpiReturn')) el('kpiReturn').textContent = `${fmt(k.return_pct)}%`;
-    if (el('kpiSharpe')) el('kpiSharpe').textContent = fmt(k.sharpe_ratio);
+    if (el('kpiCagr')) el('kpiCagr').textContent = `${fmt(k.cagr_pct)}%`;
     if (el('kpiDrawdown')) el('kpiDrawdown').textContent = `${fmt(k.max_drawdown_pct)}%`;
-
+    if (el('kpiSharpe')) el('kpiSharpe').textContent = fmt(k.sharpe_ratio);
+    if (el('kpiSortino')) el('kpiSortino').textContent = fmt(k.sortino_ratio);
+    if (el('kpiCalmar')) el('kpiCalmar').textContent = fmt(k.calmar_ratio);
+    if (el('kpiWinRate')) el('kpiWinRate').textContent = `${fmt(k.win_rate_pct)}%`;
+    if (el('kpiProfitFactor')) el('kpiProfitFactor').textContent = fmt(k.profit_factor);
+    if (el('kpiWinLoss')) el('kpiWinLoss').textContent = fmt(k.avg_win_loss_ratio);
+    
     const pb = el('posBody');
     if(pb){
       pb.innerHTML = '';
