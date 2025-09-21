@@ -4,7 +4,7 @@ A Python-based system for algorithmic trading, robust portfolio management, and 
 
 ***
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Clone the Repository
 ```bash
