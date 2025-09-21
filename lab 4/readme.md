@@ -404,7 +404,7 @@ pip install -r requirements.txt
 
 This project is designed for educational and research purposes. Please ensure compliance with financial regulations if used for actual trading.
 
-## �� Contributing
+## Contributing
 
 Feel free to fork this repository and submit pull requests for improvements. Key areas for contribution:
 - Additional technical indicators
