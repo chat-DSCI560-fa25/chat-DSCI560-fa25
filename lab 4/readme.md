@@ -110,7 +110,7 @@ The model reports:
 
 A comprehensive Python-based algorithmic trading system for portfolio management, market data acquisition, and systematic trading strategy execution. This system combines institutional-grade portfolio management with advanced quantitative analysis, featuring database persistence, real-time data processing, technical indicator computation, and systematic trading execution.
 
-## �� Key Features
+## Key Features
 
 ### Advanced Trading Strategy
 - **Multi-factor signal generation** combining trend following, momentum analysis, and mean reversion
