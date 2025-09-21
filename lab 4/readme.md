@@ -104,9 +104,7 @@ The model reports:
 - **Annualized Return (%)**: Return normalized to a yearly rate.
 - **Sharpe Ratio**: Risk‑adjusted performance.
 
-## Model 2
-
-# Stock Portfolio Trading System
+# Model 2: Stock Portfolio Trading System
 
 A comprehensive Python-based algorithmic trading system for portfolio management, market data acquisition, and systematic trading strategy execution. This system combines institutional-grade portfolio management with advanced quantitative analysis, featuring database persistence, real-time data processing, technical indicator computation, and systematic trading execution.
 
