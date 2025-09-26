@@ -4,7 +4,7 @@ from storage import insert_many
 from db import init_db
 from datetime import datetime
 
-def run_pipeline(subreddit="cybersecurity", limit=200):
+def run_pipeline(subreddit, limit):
     init_db()
     raw_posts = fetch_posts(subreddit, limit)
 
