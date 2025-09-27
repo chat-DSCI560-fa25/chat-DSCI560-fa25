@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reddit Post Cluster Finder</title>
+    <style>
+        body { font-family: sans-serif; margin: 2em; background-color: #f4f4f9; }
+        .container { max-width: 800px; margin: auto; background: white; padding: 2em; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        h1, h2 { color: #333; }
+        input[type="text"] { width: 70%; padding: 10px; border: 1px solid #ddd; border-radius: 4px; }
+        input[type="submit"] { padding: 10px 20px; border: none; background-color: #5c67f2; color: white; border-radius: 4px; cursor: pointer; }
+        ul { list-style-type: none; padding-left: 0; }
+        li { background: #f9f9f9; border-left: 4px solid #5c67f2; margin-bottom: 8px; padding: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Reddit Post Cluster Finder</h1>
+        <form method="post">
+            <input type="text" name="query" placeholder="Enter a keyword or sentence..." required>
+            <input type="submit" value="Find Cluster">
+        </form>
+
+        {% if results %}
+            <h2>Your query matches best with Cluster {{ results.cluster_id }}</h2>
+            <p>Here are some posts from that cluster:</p>
+            <ul>
+                {% for post in results.posts %}
+                    <li>{{ post.title }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
+</body>
+</html>

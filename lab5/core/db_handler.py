@@ -65,8 +65,9 @@ def insert_post(connection, post_data):
     finally:
         cursor.close()
 
+"""All posts that have not been cleaned yet."""
 def fetch_unprocessed_posts(connection):
-    """All posts that have not been cleaned yet."""
+   
     cursor = connection.cursor(dictionary=True)
     query = "SELECT id,title, post_body_raw FROM reddit_posts WHERE post_body_cleaned IS NULL"
     try:
@@ -92,8 +93,7 @@ def update_cleaned_post(connection, post_id, cleaned_text):
 
 def fetch_cleaned_posts(connection):
     cursor = connection.cursor(dictionary=True)
-    # Fetch all posts with cleaned content, including title for better analysis
-    query = "SELECT id, title, post_body_cleaned FROM reddit_posts WHERE post_body_cleaned IS NOT NULL"
+    query = "SELECT id, post_body_cleaned FROM reddit_posts WHERE post_body_cleaned IS NOT NULL AND embedding_vector IS NULL"
     try:
         cursor.execute(query)
         posts = cursor.fetchall()
@@ -106,8 +106,6 @@ def fetch_cleaned_posts(connection):
 
 def update_post_analysis(connection, post_id, vector, cluster_id):
     cursor = connection.cursor()
-    # Ensure vector is float64 for consistency
-    vector = vector.astype(np.float64)
     vector_bytes = vector.tobytes()
     query = "UPDATE reddit_posts SET embedding_vector = %s, cluster_id = %s WHERE id = %s"
     try:
@@ -117,7 +115,6 @@ def update_post_analysis(connection, post_id, vector, cluster_id):
         print(f"Error updating post analysis for {post_id}: {e}")
     finally:
         cursor.close()        
-
 
 """Fetches all posts that have a cluster_id."""
 def fetch_all_analyzed_posts(connection):
@@ -129,7 +126,7 @@ def fetch_all_analyzed_posts(connection):
         posts = cursor.fetchall()
         # Convert BLOB vector back to numpy array
         for post in posts:
-            post['embedding_vector'] = np.frombuffer(post['embedding_vector'], dtype=np.float32)
+            post['embedding_vector'] = np.frombuffer(post['embedding_vector'], dtype=np.float64)
         return posts
     except Error as e:
         print(f"Error fetching analyzed posts: {e}")

@@ -13,6 +13,5 @@ gensim
 scipy==1.12.0
 nltk
 matplotlib
-seaborn
 wordcloud
-pytesseract
+seaborn
