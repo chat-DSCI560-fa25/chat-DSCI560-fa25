@@ -3,3 +3,7 @@ __pycache__/
 *.pyc
 .DS_Store
 .env
+lab 4/db_data/
+lab5/visualizations/
+lab5/models/*.pkl
+lab5/models/*.model
