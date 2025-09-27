@@ -6,7 +6,7 @@ from scipy.spatial import distance
 import pickle 
 
 
- """I am trying to train a model, that generates embeddings, and clusters the posts."""
+"""I am trying to train a model, that generates embeddings, and clusters the posts."""
 def run_analysis():
    
     print("Starting analysis...")

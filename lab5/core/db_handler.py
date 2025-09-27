@@ -65,9 +65,8 @@ def insert_post(connection, post_data):
     finally:
         cursor.close()
 
- """All posts that have not been cleaned yet."""
 def fetch_unprocessed_posts(connection):
-   
+    """All posts that have not been cleaned yet."""
     cursor = connection.cursor(dictionary=True)
     query = "SELECT id,title, post_body_raw FROM reddit_posts WHERE post_body_cleaned IS NULL"
     try:
