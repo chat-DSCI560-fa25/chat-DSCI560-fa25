@@ -1,0 +1,58 @@
+
+services:
+  # The Python Application Service
+  app:
+    build: .
+    container_name: python_scraper_app
+    command: tail -f /dev/null
+    # Mount the current directory into the container's /app directory
+    # This means changes you make to your code on your computer are reflected inside the container
+    volumes:
+      - .:/app
+    # Load environment variables from the .env file
+    env_file:
+      - .env
+    # Wait for the database container to be healthy before starting the app
+    depends_on:
+      db:
+        condition: service_healthy
+    # Keep the container running after the script finishes
+    stdin_open: true
+    tty: true
+
+  # The MySQL Database Service
+  db:
+    image: mysql:8.0
+    container_name: mysql_db
+    # Environment variables for MySQL setup, pulled from your .env file
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+    volumes:
+      # This persists the database data on your machine, so it's not lost when the container stops
+      - mysql_data:/var/lib/mysql
+    ports:
+      # Map port 3307 on your computer to port 3306 in the container
+      # This lets you connect to the DB via phpMyAdmin using localhost:3307
+      - "3307:3306"
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin_gui
+    ports:
+      - "8080:80"
+    environment:
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+    depends_on:
+      - db    
+
+volumes:
+  mysql_data:
