@@ -92,7 +92,8 @@ def update_cleaned_post(connection, post_id, cleaned_text):
 
 def fetch_cleaned_posts(connection):
     cursor = connection.cursor(dictionary=True)
-    query = "SELECT id, post_body_cleaned FROM reddit_posts WHERE post_body_cleaned IS NOT NULL AND embedding_vector IS NULL"
+    # Fetch all posts with cleaned content, including title for better analysis
+    query = "SELECT id, title, post_body_cleaned FROM reddit_posts WHERE post_body_cleaned IS NOT NULL"
     try:
         cursor.execute(query)
         posts = cursor.fetchall()
@@ -105,6 +106,8 @@ def fetch_cleaned_posts(connection):
 
 def update_post_analysis(connection, post_id, vector, cluster_id):
     cursor = connection.cursor()
+    # Ensure vector is float64 for consistency
+    vector = vector.astype(np.float64)
     vector_bytes = vector.tobytes()
     query = "UPDATE reddit_posts SET embedding_vector = %s, cluster_id = %s WHERE id = %s"
     try:
