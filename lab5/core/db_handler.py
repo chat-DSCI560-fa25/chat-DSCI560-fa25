@@ -1,5 +1,3 @@
-# Lab5/core/db_handler.py
-
 import mysql.connector
 from mysql.connector import Error
 import config
@@ -148,3 +146,27 @@ def fetch_posts_by_cluster(connection, cluster_id):
         return []
     finally:
         cursor.close()        
+
+
+def get_db_stats(connection):
+    """Fetches number of diiferent post from the database."""
+    cursor = connection.cursor(dictionary=True)
+    stats = {}
+    try:
+        # Get total post count
+        cursor.execute("SELECT COUNT(*) as total_posts FROM reddit_posts")
+        stats['total_posts'] = cursor.fetchone()['total_posts']
+
+        # Get count of analyzed posts
+        cursor.execute("SELECT COUNT(*) as analyzed_posts FROM reddit_posts WHERE cluster_id IS NOT NULL")
+        stats['analyzed_posts'] = cursor.fetchone()['analyzed_posts']
+
+        # Get count of posts per cluster
+        cursor.execute("SELECT cluster_id, COUNT(*) as count FROM reddit_posts WHERE cluster_id IS NOT NULL GROUP BY cluster_id ORDER BY cluster_id")
+        stats['posts_per_cluster'] = cursor.fetchall()
+
+    except Error as e:
+        print(f"Error fetching stats: {e}")
+    finally:
+        cursor.close()
+    return stats        

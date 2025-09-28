@@ -1,42 +1,46 @@
+# docker-compose.yml
 
 services:
-  # The Python Application Service
+  # Service 1: The Flask Web App 
   app:
     build: .
-    container_name: python_scraper_app
+    container_name: flask_web_app
     command: gunicorn --bind 0.0.0.0:5000 -w 4 flask_app.app:app
     volumes:
       - .:/app
     ports:
-      - "5000:5000"  
-    # Load environment variables from the .env file
+      - "5000:5000"
     env_file:
       - .env
-    # Wait for the database container 
     depends_on:
       db:
         condition: service_healthy
-    #I am No longer using this since Using flask
-    # Keep the container running after the script finishes
-    #stdin_open: true
-    #tty: true
 
-  # The MySQL Database Service
+  # Service 2: The Background Automation Script 
+  worker:
+    build: .
+    container_name: background_worker
+    command: python main.py --interval 15
+    volumes:
+      - .:/app
+    env_file:
+      - .env
+    depends_on:
+      db:
+        condition: service_healthy
+  
+  # Database and phpMyAdmin services remain the same
   db:
     image: mysql:8.0
     container_name: mysql_db
-    # Environment variables for MySQL setup, pulled from your .env file
     environment:
       MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
       MYSQL_DATABASE: ${DB_NAME}
       MYSQL_USER: ${DB_USER}
       MYSQL_PASSWORD: ${DB_PASSWORD}
     volumes:
-      # This persists the database 
       - mysql_data:/var/lib/mysql
     ports:
-      # Map port 3307 on your computer to port 3306 in the container
-      
       - "3307:3306"
     healthcheck:
       test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
@@ -53,7 +57,7 @@ services:
       PMA_HOST: db
       MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
     depends_on:
-      - db    
+      - db
 
 volumes:
   mysql_data:

@@ -29,7 +29,7 @@ def fetch_posts(subreddit_name, post_limit):
 
     print("Starting to fetch posts...")
     fetched_count = 0
-    for post in subreddit.hot(limit=post_limit):
+    for post in subreddit.new(limit=300):
         author_name = post.author.name if post.author else None
         
         post_data = (
