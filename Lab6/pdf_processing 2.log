@@ -1,0 +1,691 @@
+2025-10-04 17:56:30,315 - INFO - Initializing Enhanced PDF Processor...
+2025-10-04 17:56:30,367 - INFO - Processing: W11745.pdf
+2025-10-04 17:56:30,367 - WARNING - No data extracted from W11745.pdf
+2025-10-04 17:56:30,367 - INFO - Processing: W11920.pdf
+2025-10-04 17:56:30,367 - WARNING - No data extracted from W11920.pdf
+2025-10-04 17:56:30,367 - INFO - Processing: W15358.pdf
+2025-10-04 17:56:30,367 - WARNING - No data extracted from W15358.pdf
+2025-10-04 17:56:30,367 - INFO - Processing: W20197.pdf
+2025-10-04 17:56:30,367 - WARNING - No data extracted from W20197.pdf
+2025-10-04 17:56:30,367 - INFO - Processing: W20407.pdf
+2025-10-04 17:56:30,368 - WARNING - No data extracted from W20407.pdf
+2025-10-04 17:56:30,368 - INFO - Processing: W20863.pdf
+2025-10-04 17:56:30,368 - WARNING - No data extracted from W20863.pdf
+2025-10-04 17:56:30,368 - INFO - Processing: W20864.pdf
+2025-10-04 17:56:30,368 - WARNING - No data extracted from W20864.pdf
+2025-10-04 17:56:30,368 - INFO - Processing: W21266.pdf
+2025-10-04 17:56:30,368 - WARNING - No data extracted from W21266.pdf
+2025-10-04 17:56:30,368 - INFO - Processing: W21796.pdf
+2025-10-04 17:56:30,368 - WARNING - No data extracted from W21796.pdf
+2025-10-04 17:56:30,368 - INFO - Processing: W22099.pdf
+2025-10-04 17:56:30,368 - WARNING - No data extracted from W22099.pdf
+2025-10-04 17:56:30,368 - INFO - Processing: W22220.pdf
+2025-10-04 17:56:30,368 - WARNING - No data extracted from W22220.pdf
+2025-10-04 17:56:30,368 - INFO - Processing: W22221.pdf
+2025-10-04 17:56:30,368 - WARNING - No data extracted from W22221.pdf
+2025-10-04 17:56:30,368 - INFO - Processing: W22247.pdf
+2025-10-04 17:56:30,368 - WARNING - No data extracted from W22247.pdf
+2025-10-04 17:56:30,368 - INFO - Processing: W22249.pdf
+2025-10-04 17:56:30,368 - WARNING - No data extracted from W22249.pdf
+2025-10-04 17:56:30,368 - INFO - Processing: W22731.pdf
+2025-10-04 17:56:30,368 - WARNING - No data extracted from W22731.pdf
+2025-10-04 17:56:30,368 - INFO - Processing: W22740.pdf
+2025-10-04 17:56:30,368 - WARNING - No data extracted from W22740.pdf
+2025-10-04 17:56:30,368 - INFO - Processing: W23230.pdf
+2025-10-04 17:56:30,368 - WARNING - No data extracted from W23230.pdf
+2025-10-04 17:56:30,368 - INFO - Processing: W23359.pdf
+2025-10-04 17:56:30,368 - WARNING - No data extracted from W23359.pdf
+2025-10-04 17:56:30,368 - INFO - Processing: W23360.pdf
+2025-10-04 17:56:30,368 - WARNING - No data extracted from W23360.pdf
+2025-10-04 17:56:30,368 - INFO - Processing: W23361.pdf
+2025-10-04 17:56:30,368 - WARNING - No data extracted from W23361.pdf
+2025-10-04 17:56:30,368 - INFO - Processing: W23362.pdf
+2025-10-04 17:56:30,368 - WARNING - No data extracted from W23362.pdf
+2025-10-04 17:56:30,368 - INFO - Processing: W23363.pdf
+2025-10-04 17:56:30,368 - WARNING - No data extracted from W23363.pdf
+2025-10-04 17:56:30,368 - INFO - Processing: W23364.pdf
+2025-10-04 17:56:30,368 - WARNING - No data extracted from W23364.pdf
+2025-10-04 17:56:30,369 - INFO - Processing: W23365.pdf
+2025-10-04 17:56:30,369 - WARNING - No data extracted from W23365.pdf
+2025-10-04 17:56:30,369 - INFO - Processing: W23366.pdf
+2025-10-04 17:56:30,369 - WARNING - No data extracted from W23366.pdf
+2025-10-04 17:56:30,369 - INFO - Processing: W23367.pdf
+2025-10-04 17:56:30,369 - WARNING - No data extracted from W23367.pdf
+2025-10-04 17:56:30,369 - INFO - Processing: W23368.pdf
+2025-10-04 17:56:30,369 - WARNING - No data extracted from W23368.pdf
+2025-10-04 17:56:30,369 - INFO - Processing: W23369.pdf
+2025-10-04 17:56:30,369 - WARNING - No data extracted from W23369.pdf
+2025-10-04 17:56:30,369 - INFO - Processing: W23370.pdf
+2025-10-04 17:56:30,369 - WARNING - No data extracted from W23370.pdf
+2025-10-04 17:56:30,369 - INFO - Processing: W23371.pdf
+2025-10-04 17:56:30,369 - WARNING - No data extracted from W23371.pdf
+2025-10-04 17:56:30,369 - INFO - Processing: W23372.pdf
+2025-10-04 17:56:30,369 - WARNING - No data extracted from W23372.pdf
+2025-10-04 17:56:30,369 - INFO - Processing: W25156.pdf
+2025-10-04 17:56:30,369 - WARNING - No data extracted from W25156.pdf
+2025-10-04 17:56:30,369 - INFO - Processing: W25157.pdf
+2025-10-04 17:56:30,369 - WARNING - No data extracted from W25157.pdf
+2025-10-04 17:56:30,369 - INFO - Processing: W25158.pdf
+2025-10-04 17:56:30,369 - WARNING - No data extracted from W25158.pdf
+2025-10-04 17:56:30,369 - INFO - Processing: W25159.pdf
+2025-10-04 17:56:30,369 - WARNING - No data extracted from W25159.pdf
+2025-10-04 17:56:30,369 - INFO - Processing: W25160.pdf
+2025-10-04 17:56:30,369 - WARNING - No data extracted from W25160.pdf
+2025-10-04 17:56:30,369 - INFO - Processing: W25571.pdf
+2025-10-04 17:56:30,369 - WARNING - No data extracted from W25571.pdf
+2025-10-04 17:56:30,369 - INFO - Processing: W28190.pdf
+2025-10-04 17:56:30,369 - WARNING - No data extracted from W28190.pdf
+2025-10-04 17:56:30,369 - INFO - Processing: W28194.pdf
+2025-10-04 17:56:30,369 - WARNING - No data extracted from W28194.pdf
+2025-10-04 17:56:30,369 - INFO - Processing: W28303.pdf
+2025-10-04 17:56:30,369 - WARNING - No data extracted from W28303.pdf
+2025-10-04 17:56:30,369 - INFO - Processing: W28342.pdf
+2025-10-04 17:56:30,369 - WARNING - No data extracted from W28342.pdf
+2025-10-04 17:56:30,369 - INFO - Processing: W28394.pdf
+2025-10-04 17:56:30,369 - WARNING - No data extracted from W28394.pdf
+2025-10-04 17:56:30,370 - INFO - Processing: W28425.pdf
+2025-10-04 17:56:30,370 - WARNING - No data extracted from W28425.pdf
+2025-10-04 17:56:30,370 - INFO - Processing: W28554.pdf
+2025-10-04 17:56:30,370 - WARNING - No data extracted from W28554.pdf
+2025-10-04 17:56:30,370 - INFO - Processing: W28557.pdf
+2025-10-04 17:56:30,370 - WARNING - No data extracted from W28557.pdf
+2025-10-04 17:56:30,370 - INFO - Processing: W28599.pdf
+2025-10-04 17:56:30,370 - WARNING - No data extracted from W28599.pdf
+2025-10-04 17:56:30,370 - INFO - Processing: W28600.pdf
+2025-10-04 17:56:30,370 - WARNING - No data extracted from W28600.pdf
+2025-10-04 17:56:30,370 - INFO - Processing: W28601.pdf
+2025-10-04 17:56:30,370 - WARNING - No data extracted from W28601.pdf
+2025-10-04 17:56:30,370 - INFO - Processing: W28633.pdf
+2025-10-04 17:56:30,370 - WARNING - No data extracted from W28633.pdf
+2025-10-04 17:56:30,370 - INFO - Processing: W28634.pdf
+2025-10-04 17:56:30,370 - WARNING - No data extracted from W28634.pdf
+2025-10-04 17:56:30,370 - INFO - Processing: W28636.pdf
+2025-10-04 17:56:30,370 - WARNING - No data extracted from W28636.pdf
+2025-10-04 17:56:30,370 - INFO - Processing: W28637.pdf
+2025-10-04 17:56:30,370 - WARNING - No data extracted from W28637.pdf
+2025-10-04 17:56:30,370 - INFO - Processing: W28648.pdf
+2025-10-04 17:56:30,370 - WARNING - No data extracted from W28648.pdf
+2025-10-04 17:56:30,370 - INFO - Processing: W28649.pdf
+2025-10-04 17:56:30,370 - WARNING - No data extracted from W28649.pdf
+2025-10-04 17:56:30,370 - INFO - Processing: W28651.pdf
+2025-10-04 17:56:30,370 - WARNING - No data extracted from W28651.pdf
+2025-10-04 17:56:30,370 - INFO - Processing: W28652.pdf
+2025-10-04 17:56:30,370 - WARNING - No data extracted from W28652.pdf
+2025-10-04 17:56:30,370 - INFO - Processing: W28654.pdf
+2025-10-04 17:56:30,370 - WARNING - No data extracted from W28654.pdf
+2025-10-04 17:56:30,370 - INFO - Processing: W28655.pdf
+2025-10-04 17:56:30,370 - WARNING - No data extracted from W28655.pdf
+2025-10-04 17:56:30,370 - INFO - Processing: W28658.pdf
+2025-10-04 17:56:30,370 - WARNING - No data extracted from W28658.pdf
+2025-10-04 17:56:30,370 - INFO - Processing: W28744.pdf
+2025-10-04 17:56:30,370 - WARNING - No data extracted from W28744.pdf
+2025-10-04 17:56:30,370 - INFO - Processing: W28754.pdf
+2025-10-04 17:56:30,370 - WARNING - No data extracted from W28754.pdf
+2025-10-04 17:56:30,370 - INFO - Processing: W28755.pdf
+2025-10-04 17:56:30,371 - WARNING - No data extracted from W28755.pdf
+2025-10-04 17:56:30,371 - INFO - Processing: W28756.pdf
+2025-10-04 17:56:30,371 - WARNING - No data extracted from W28756.pdf
+2025-10-04 17:56:30,371 - INFO - Processing: W28976.pdf
+2025-10-04 17:56:30,371 - WARNING - No data extracted from W28976.pdf
+2025-10-04 17:56:30,371 - INFO - Processing: W28978.pdf
+2025-10-04 17:56:30,371 - WARNING - No data extracted from W28978.pdf
+2025-10-04 17:56:30,371 - INFO - Processing: W29242.pdf
+2025-10-04 17:56:30,371 - WARNING - No data extracted from W29242.pdf
+2025-10-04 17:56:30,371 - INFO - Processing: W29244.pdf
+2025-10-04 17:56:30,371 - WARNING - No data extracted from W29244.pdf
+2025-10-04 17:56:30,371 - INFO - Processing: W29316.pdf
+2025-10-04 17:56:30,371 - WARNING - No data extracted from W29316.pdf
+2025-10-04 17:56:30,371 - INFO - Processing: W29317.pdf
+2025-10-04 17:56:30,371 - WARNING - No data extracted from W29317.pdf
+2025-10-04 17:56:30,371 - INFO - Processing: W29334.pdf
+2025-10-04 17:56:30,371 - WARNING - No data extracted from W29334.pdf
+2025-10-04 17:56:30,371 - INFO - Processing: W30188.pdf
+2025-10-04 17:56:30,371 - WARNING - No data extracted from W30188.pdf
+2025-10-04 17:56:30,371 - INFO - Processing: W30189.pdf
+2025-10-04 17:56:30,371 - WARNING - No data extracted from W30189.pdf
+2025-10-04 17:56:30,371 - INFO - Processing: W30789.pdf
+2025-10-04 17:56:30,371 - WARNING - No data extracted from W30789.pdf
+2025-10-04 17:56:30,371 - INFO - Processing: W36047.pdf
+2025-10-04 17:56:30,371 - WARNING - No data extracted from W36047.pdf
+2025-10-04 17:56:30,371 - INFO - Processing: W90244.pdf
+2025-10-04 17:56:30,371 - WARNING - No data extracted from W90244.pdf
+2025-10-04 17:56:30,371 - INFO - Processing: W90258.pdf
+2025-10-04 17:56:30,371 - WARNING - No data extracted from W90258.pdf
+2025-10-04 17:56:30,371 - INFO - Processing: W90329.pdf
+2025-10-04 17:56:30,371 - WARNING - No data extracted from W90329.pdf
+2025-10-04 17:56:30,372 - INFO - 📊 Processing Summary saved to: step1_output/processing_summary.json
+2025-10-04 17:57:58,171 - INFO - Processing W28654.pdf
+2025-10-04 17:58:09,314 - INFO - Processing W11745.pdf
+2025-10-04 17:58:09,399 - WARNING - No coordinates found for pdf_data/W11745.pdf
+2025-10-04 17:58:09,401 - INFO - Processing W11920.pdf
+2025-10-04 17:58:09,482 - WARNING - No coordinates found for pdf_data/W11920.pdf
+2025-10-04 17:58:09,484 - INFO - Processing W15358.pdf
+2025-10-04 17:58:09,574 - WARNING - No coordinates found for pdf_data/W15358.pdf
+2025-10-04 17:58:09,577 - INFO - Processing W20197.pdf
+2025-10-04 17:58:11,687 - INFO - Geocoded 'McKenzie County, ND' to 47.7702536, -103.4734684
+2025-10-04 17:58:11,716 - INFO - Processing W20407.pdf
+2025-10-04 17:58:21,761 - INFO - Initializing Enhanced PDF Processor...
+2025-10-04 17:58:21,788 - INFO - Processing: W11745.pdf
+2025-10-04 17:58:21,789 - INFO - Processing W11745.pdf
+2025-10-04 17:58:21,866 - WARNING - No coordinates found for pdf_data/W11745.pdf
+2025-10-04 17:58:21,868 - INFO - ✅ Successfully processed: W11745.pdf
+2025-10-04 17:58:21,868 - INFO - Processing: W11920.pdf
+2025-10-04 17:58:21,868 - INFO - Processing W11920.pdf
+2025-10-04 17:58:21,949 - WARNING - No coordinates found for pdf_data/W11920.pdf
+2025-10-04 17:58:21,952 - INFO - ✅ Successfully processed: W11920.pdf
+2025-10-04 17:58:21,952 - INFO - Processing: W15358.pdf
+2025-10-04 17:58:21,952 - INFO - Processing W15358.pdf
+2025-10-04 17:58:22,052 - WARNING - No coordinates found for pdf_data/W15358.pdf
+2025-10-04 17:58:22,055 - INFO - ✅ Successfully processed: W15358.pdf
+2025-10-04 17:58:22,055 - INFO - Processing: W20197.pdf
+2025-10-04 17:58:22,055 - INFO - Processing W20197.pdf
+2025-10-04 17:58:23,985 - INFO - Geocoded 'McKenzie County, ND' to 47.7702536, -103.4734684
+2025-10-04 17:58:24,020 - INFO - ✅ Successfully processed: W20197.pdf
+2025-10-04 17:58:24,020 - INFO - Processing: W20407.pdf
+2025-10-04 17:58:24,020 - INFO - Processing W20407.pdf
+2025-10-04 17:58:24,223 - INFO - ✅ Successfully processed: W20407.pdf
+2025-10-04 17:58:24,223 - INFO - Processing: W20863.pdf
+2025-10-04 17:58:24,223 - INFO - Processing W20863.pdf
+2025-10-04 17:58:25,435 - WARNING - No coordinates found for pdf_data/W20863.pdf
+2025-10-04 17:58:25,455 - INFO - ✅ Successfully processed: W20863.pdf
+2025-10-04 17:58:25,455 - INFO - Processing: W20864.pdf
+2025-10-04 17:58:25,455 - INFO - Processing W20864.pdf
+2025-10-04 17:58:25,652 - INFO - ✅ Successfully processed: W20864.pdf
+2025-10-04 17:58:25,652 - INFO - Processing: W21266.pdf
+2025-10-04 17:58:25,652 - INFO - Processing W21266.pdf
+2025-10-04 17:58:25,790 - INFO - ✅ Successfully processed: W21266.pdf
+2025-10-04 17:58:25,790 - INFO - Processing: W21796.pdf
+2025-10-04 17:58:25,790 - INFO - Processing W21796.pdf
+2025-10-04 17:58:28,104 - WARNING - No coordinates found for pdf_data/W21796.pdf
+2025-10-04 17:58:28,120 - INFO - ✅ Successfully processed: W21796.pdf
+2025-10-04 17:58:28,120 - INFO - Processing: W22099.pdf
+2025-10-04 17:58:28,120 - INFO - Processing W22099.pdf
+2025-10-04 17:58:29,180 - INFO - ✅ Successfully processed: W22099.pdf
+2025-10-04 17:58:29,180 - INFO - Processing: W22220.pdf
+2025-10-04 17:58:29,180 - INFO - Processing W22220.pdf
+2025-10-04 17:58:29,498 - INFO - ✅ Successfully processed: W22220.pdf
+2025-10-04 17:58:29,498 - INFO - Processing: W22221.pdf
+2025-10-04 17:58:29,499 - INFO - Processing W22221.pdf
+2025-10-04 17:58:30,328 - INFO - ✅ Successfully processed: W22221.pdf
+2025-10-04 17:58:30,328 - INFO - Processing: W22247.pdf
+2025-10-04 17:58:30,328 - INFO - Processing W22247.pdf
+2025-10-04 17:58:30,468 - INFO - ✅ Successfully processed: W22247.pdf
+2025-10-04 17:58:30,468 - INFO - Processing: W22249.pdf
+2025-10-04 17:58:30,468 - INFO - Processing W22249.pdf
+2025-10-04 17:58:30,634 - INFO - ✅ Successfully processed: W22249.pdf
+2025-10-04 17:58:30,634 - INFO - Processing: W22731.pdf
+2025-10-04 17:58:30,634 - INFO - Processing W22731.pdf
+2025-10-04 17:58:31,000 - INFO - ✅ Successfully processed: W22731.pdf
+2025-10-04 17:58:31,000 - INFO - Processing: W22740.pdf
+2025-10-04 17:58:31,002 - INFO - Processing W22740.pdf
+2025-10-04 17:58:31,651 - INFO - ✅ Successfully processed: W22740.pdf
+2025-10-04 17:58:31,651 - INFO - Processing: W23230.pdf
+2025-10-04 17:58:31,651 - INFO - Processing W23230.pdf
+2025-10-04 17:58:33,581 - INFO - Geocoded 'McKenzie County, TX' to 35.42772, -101.1855024
+2025-10-04 17:58:33,623 - INFO - ✅ Successfully processed: W23230.pdf
+2025-10-04 17:58:33,623 - INFO - Processing: W23359.pdf
+2025-10-04 17:58:33,623 - INFO - Processing W23359.pdf
+2025-10-04 17:58:36,390 - INFO - Geocoded 'OF' to 40.947642, 40.2694068
+2025-10-04 17:58:36,417 - INFO - ✅ Successfully processed: W23359.pdf
+2025-10-04 17:58:36,417 - INFO - Processing: W23360.pdf
+2025-10-04 17:58:36,417 - INFO - Processing W23360.pdf
+2025-10-04 17:58:37,173 - INFO - ✅ Successfully processed: W23360.pdf
+2025-10-04 17:58:37,173 - INFO - Processing: W23361.pdf
+2025-10-04 17:58:37,173 - INFO - Processing W23361.pdf
+2025-10-04 17:58:37,661 - INFO - ✅ Successfully processed: W23361.pdf
+2025-10-04 17:58:37,661 - INFO - Processing: W23362.pdf
+2025-10-04 17:58:37,661 - INFO - Processing W23362.pdf
+2025-10-04 17:58:38,406 - INFO - ✅ Successfully processed: W23362.pdf
+2025-10-04 17:58:38,406 - INFO - Processing: W23363.pdf
+2025-10-04 17:58:38,406 - INFO - Processing W23363.pdf
+2025-10-04 17:58:39,134 - INFO - ✅ Successfully processed: W23363.pdf
+2025-10-04 17:58:39,134 - INFO - Processing: W23364.pdf
+2025-10-04 17:58:39,134 - INFO - Processing W23364.pdf
+2025-10-04 17:58:40,018 - INFO - ✅ Successfully processed: W23364.pdf
+2025-10-04 17:58:40,018 - INFO - Processing: W23365.pdf
+2025-10-04 17:58:40,018 - INFO - Processing W23365.pdf
+2025-10-04 17:58:40,261 - INFO - ✅ Successfully processed: W23365.pdf
+2025-10-04 17:58:40,261 - INFO - Processing: W23366.pdf
+2025-10-04 17:58:40,261 - INFO - Processing W23366.pdf
+2025-10-04 17:58:43,439 - INFO - Geocoded 'OF' to 40.947642, 40.2694068
+2025-10-04 17:58:43,465 - INFO - ✅ Successfully processed: W23366.pdf
+2025-10-04 17:58:43,466 - INFO - Processing: W23367.pdf
+2025-10-04 17:58:43,466 - INFO - Processing W23367.pdf
+2025-10-04 17:58:44,259 - INFO - ✅ Successfully processed: W23367.pdf
+2025-10-04 17:58:44,259 - INFO - Processing: W23368.pdf
+2025-10-04 17:58:44,259 - INFO - Processing W23368.pdf
+2025-10-04 17:58:47,033 - INFO - Geocoded 'OF' to 40.947642, 40.2694068
+2025-10-04 17:58:47,047 - INFO - ✅ Successfully processed: W23368.pdf
+2025-10-04 17:58:47,047 - INFO - Processing: W23369.pdf
+2025-10-04 17:58:47,047 - INFO - Processing W23369.pdf
+2025-10-04 17:58:48,065 - INFO - ✅ Successfully processed: W23369.pdf
+2025-10-04 17:58:48,066 - INFO - Processing: W23370.pdf
+2025-10-04 17:58:48,066 - INFO - Processing W23370.pdf
+2025-10-04 17:58:48,585 - INFO - ✅ Successfully processed: W23370.pdf
+2025-10-04 17:58:48,585 - INFO - Processing: W23371.pdf
+2025-10-04 17:58:48,585 - INFO - Processing W23371.pdf
+2025-10-04 17:58:49,282 - INFO - ✅ Successfully processed: W23371.pdf
+2025-10-04 17:58:49,282 - INFO - Processing: W23372.pdf
+2025-10-04 17:58:49,282 - INFO - Processing W23372.pdf
+2025-10-04 17:58:49,712 - INFO - ✅ Successfully processed: W23372.pdf
+2025-10-04 17:58:49,712 - INFO - Processing: W25156.pdf
+2025-10-04 17:58:49,712 - INFO - Processing W25156.pdf
+2025-10-04 17:58:53,731 - WARNING - No coordinates found for pdf_data/W25156.pdf
+2025-10-04 17:58:53,787 - INFO - ✅ Successfully processed: W25156.pdf
+2025-10-04 17:58:53,787 - INFO - Processing: W25157.pdf
+2025-10-04 17:58:53,787 - INFO - Processing W25157.pdf
+2025-10-04 17:58:55,426 - INFO - Geocoded 'McKenzie 
+City 
+Oklahoma City County, OK' to 35.4661436, -97.524039
+2025-10-04 17:58:55,446 - INFO - ✅ Successfully processed: W25157.pdf
+2025-10-04 17:58:55,446 - INFO - Processing: W25158.pdf
+2025-10-04 17:58:55,446 - INFO - Processing W25158.pdf
+2025-10-04 17:58:58,008 - INFO - Geocoded 'OF' to 40.947642, 40.2694068
+2025-10-04 17:58:58,047 - INFO - ✅ Successfully processed: W25158.pdf
+2025-10-04 17:58:58,048 - INFO - Processing: W25159.pdf
+2025-10-04 17:58:58,048 - INFO - Processing W25159.pdf
+2025-10-04 17:59:00,981 - INFO - Geocoded 'OF' to 40.947642, 40.2694068
+2025-10-04 17:59:01,002 - INFO - ✅ Successfully processed: W25159.pdf
+2025-10-04 17:59:01,002 - INFO - Processing: W25160.pdf
+2025-10-04 17:59:01,002 - INFO - Processing W25160.pdf
+2025-10-04 17:59:03,417 - INFO - Geocoded 'OF' to 40.947642, 40.2694068
+2025-10-04 17:59:03,431 - INFO - ✅ Successfully processed: W25160.pdf
+2025-10-04 17:59:03,431 - INFO - Processing: W25571.pdf
+2025-10-04 17:59:03,431 - INFO - Processing W25571.pdf
+2025-10-04 17:59:04,148 - INFO - ✅ Successfully processed: W25571.pdf
+2025-10-04 17:59:04,148 - INFO - Processing: W28190.pdf
+2025-10-04 17:59:04,148 - INFO - Processing W28190.pdf
+2025-10-04 17:59:05,057 - INFO - ✅ Successfully processed: W28190.pdf
+2025-10-04 17:59:05,057 - INFO - Processing: W28194.pdf
+2025-10-04 17:59:05,057 - INFO - Processing W28194.pdf
+2025-10-04 17:59:05,818 - INFO - ✅ Successfully processed: W28194.pdf
+2025-10-04 17:59:05,818 - INFO - Processing: W28303.pdf
+2025-10-04 17:59:05,818 - INFO - Processing W28303.pdf
+2025-10-04 17:59:09,291 - INFO - Geocoded 'OF' to 40.947642, 40.2694068
+2025-10-04 17:59:09,338 - INFO - ✅ Successfully processed: W28303.pdf
+2025-10-04 17:59:09,338 - INFO - Processing: W28342.pdf
+2025-10-04 17:59:09,339 - INFO - Processing W28342.pdf
+2025-10-04 17:59:10,076 - INFO - ✅ Successfully processed: W28342.pdf
+2025-10-04 17:59:10,076 - INFO - Processing: W28394.pdf
+2025-10-04 17:59:10,076 - INFO - Processing W28394.pdf
+2025-10-04 17:59:12,900 - INFO - Geocoded 'OF' to 40.947642, 40.2694068
+2025-10-04 17:59:12,937 - INFO - ✅ Successfully processed: W28394.pdf
+2025-10-04 17:59:12,937 - INFO - Processing: W28425.pdf
+2025-10-04 17:59:12,937 - INFO - Processing W28425.pdf
+2025-10-04 17:59:15,477 - INFO - Geocoded 'and County, TX' to 30.2882249, -97.7398792
+2025-10-04 17:59:15,509 - INFO - ✅ Successfully processed: W28425.pdf
+2025-10-04 17:59:15,509 - INFO - Processing: W28554.pdf
+2025-10-04 17:59:15,509 - INFO - Processing W28554.pdf
+2025-10-04 17:59:18,473 - INFO - Geocoded 'OF' to 40.947642, 40.2694068
+2025-10-04 17:59:18,512 - INFO - ✅ Successfully processed: W28554.pdf
+2025-10-04 17:59:18,512 - INFO - Processing: W28557.pdf
+2025-10-04 17:59:18,512 - INFO - Processing W28557.pdf
+2025-10-04 17:59:21,472 - INFO - Geocoded 'OF' to 40.947642, 40.2694068
+2025-10-04 17:59:21,503 - INFO - ✅ Successfully processed: W28557.pdf
+2025-10-04 17:59:21,503 - INFO - Processing: W28599.pdf
+2025-10-04 17:59:21,503 - INFO - Processing W28599.pdf
+2025-10-04 17:59:22,229 - INFO - ✅ Successfully processed: W28599.pdf
+2025-10-04 17:59:22,230 - INFO - Processing: W28600.pdf
+2025-10-04 17:59:22,230 - INFO - Processing W28600.pdf
+2025-10-04 17:59:23,077 - INFO - ✅ Successfully processed: W28600.pdf
+2025-10-04 17:59:23,078 - INFO - Processing: W28601.pdf
+2025-10-04 17:59:23,078 - INFO - Processing W28601.pdf
+2025-10-04 17:59:25,042 - INFO - Geocoded 'McKenzie County, TX' to 35.42772, -101.1855024
+2025-10-04 17:59:25,090 - INFO - ✅ Successfully processed: W28601.pdf
+2025-10-04 17:59:25,090 - INFO - Processing: W28633.pdf
+2025-10-04 17:59:25,090 - INFO - Processing W28633.pdf
+2025-10-04 17:59:27,005 - INFO - Geocoded 'Mckenzie County, TX' to 35.42772, -101.1855024
+2025-10-04 17:59:27,041 - INFO - ✅ Successfully processed: W28633.pdf
+2025-10-04 17:59:27,041 - INFO - Processing: W28634.pdf
+2025-10-04 17:59:27,041 - INFO - Processing W28634.pdf
+2025-10-04 17:59:28,960 - INFO - Geocoded 'Mckenzie County, TX' to 35.42772, -101.1855024
+2025-10-04 17:59:29,004 - INFO - ✅ Successfully processed: W28634.pdf
+2025-10-04 17:59:29,004 - INFO - Processing: W28636.pdf
+2025-10-04 17:59:29,004 - INFO - Processing W28636.pdf
+2025-10-04 17:59:31,230 - INFO - Geocoded 'McKenzie County, TX' to 35.42772, -101.1855024
+2025-10-04 17:59:31,281 - INFO - ✅ Successfully processed: W28636.pdf
+2025-10-04 17:59:31,281 - INFO - Processing: W28637.pdf
+2025-10-04 17:59:31,281 - INFO - Processing W28637.pdf
+2025-10-04 17:59:33,442 - INFO - Geocoded 'McKenzie County, TX' to 35.42772, -101.1855024
+2025-10-04 17:59:33,492 - INFO - ✅ Successfully processed: W28637.pdf
+2025-10-04 17:59:33,492 - INFO - Processing: W28648.pdf
+2025-10-04 17:59:33,492 - INFO - Processing W28648.pdf
+2025-10-04 17:59:36,701 - INFO - Geocoded 'OF' to 40.947642, 40.2694068
+2025-10-04 17:59:36,747 - INFO - ✅ Successfully processed: W28648.pdf
+2025-10-04 17:59:36,747 - INFO - Processing: W28649.pdf
+2025-10-04 17:59:36,747 - INFO - Processing W28649.pdf
+2025-10-04 17:59:39,001 - INFO - Geocoded 'Mckenzie County, TX' to 35.42772, -101.1855024
+2025-10-04 17:59:39,048 - INFO - ✅ Successfully processed: W28649.pdf
+2025-10-04 17:59:39,048 - INFO - Processing: W28651.pdf
+2025-10-04 17:59:39,048 - INFO - Processing W28651.pdf
+2025-10-04 17:59:40,971 - INFO - Geocoded 'McKenzie County, TX' to 35.42772, -101.1855024
+2025-10-04 17:59:41,004 - INFO - ✅ Successfully processed: W28651.pdf
+2025-10-04 17:59:41,004 - INFO - Processing: W28652.pdf
+2025-10-04 17:59:41,004 - INFO - Processing W28652.pdf
+2025-10-04 17:59:43,244 - INFO - Geocoded 'McKenzie County, ND' to 47.7702536, -103.4734684
+2025-10-04 17:59:43,284 - INFO - ✅ Successfully processed: W28652.pdf
+2025-10-04 17:59:43,284 - INFO - Processing: W28654.pdf
+2025-10-04 17:59:43,284 - INFO - Processing W28654.pdf
+2025-10-04 17:59:44,032 - INFO - ✅ Successfully processed: W28654.pdf
+2025-10-04 17:59:44,032 - INFO - Processing: W28655.pdf
+2025-10-04 17:59:44,032 - INFO - Processing W28655.pdf
+2025-10-04 17:59:45,995 - INFO - Geocoded 'McKenzie County, TX' to 35.42772, -101.1855024
+2025-10-04 17:59:46,032 - INFO - ✅ Successfully processed: W28655.pdf
+2025-10-04 17:59:46,032 - INFO - Processing: W28658.pdf
+2025-10-04 17:59:46,032 - INFO - Processing W28658.pdf
+2025-10-04 17:59:46,959 - INFO - ✅ Successfully processed: W28658.pdf
+2025-10-04 17:59:46,959 - INFO - Processing: W28744.pdf
+2025-10-04 17:59:46,959 - INFO - Processing W28744.pdf
+2025-10-04 17:59:49,714 - INFO - Geocoded 'OF' to 40.947642, 40.2694068
+2025-10-04 17:59:49,741 - INFO - ✅ Successfully processed: W28744.pdf
+2025-10-04 17:59:49,741 - INFO - Processing: W28754.pdf
+2025-10-04 17:59:49,741 - INFO - Processing W28754.pdf
+2025-10-04 17:59:50,680 - INFO - ✅ Successfully processed: W28754.pdf
+2025-10-04 17:59:50,681 - INFO - Processing: W28755.pdf
+2025-10-04 17:59:50,681 - INFO - Processing W28755.pdf
+2025-10-04 17:59:51,555 - INFO - ✅ Successfully processed: W28755.pdf
+2025-10-04 17:59:51,555 - INFO - Processing: W28756.pdf
+2025-10-04 17:59:51,556 - INFO - Processing W28756.pdf
+2025-10-04 17:59:52,400 - INFO - ✅ Successfully processed: W28756.pdf
+2025-10-04 17:59:52,401 - INFO - Processing: W28976.pdf
+2025-10-04 17:59:52,401 - INFO - Processing W28976.pdf
+2025-10-04 17:59:54,545 - INFO - Geocoded 'and County, TX' to 30.2882249, -97.7398792
+2025-10-04 17:59:54,587 - INFO - ✅ Successfully processed: W28976.pdf
+2025-10-04 17:59:54,587 - INFO - Processing: W28978.pdf
+2025-10-04 17:59:54,587 - INFO - Processing W28978.pdf
+2025-10-04 17:59:56,628 - INFO - Geocoded 'and County, TX' to 30.2882249, -97.7398792
+2025-10-04 17:59:56,668 - INFO - ✅ Successfully processed: W28978.pdf
+2025-10-04 17:59:56,668 - INFO - Processing: W29242.pdf
+2025-10-04 17:59:56,668 - INFO - Processing W29242.pdf
+2025-10-04 17:59:59,423 - INFO - Geocoded ' County, TX' to 31.2183272, -96.7828793
+2025-10-04 17:59:59,482 - INFO - ✅ Successfully processed: W29242.pdf
+2025-10-04 17:59:59,483 - INFO - Processing: W29244.pdf
+2025-10-04 17:59:59,483 - INFO - Processing W29244.pdf
+2025-10-04 18:00:02,048 - INFO - Geocoded ' County, TX' to 31.2183272, -96.7828793
+2025-10-04 18:00:02,088 - INFO - ✅ Successfully processed: W29244.pdf
+2025-10-04 18:00:02,088 - INFO - Processing: W29316.pdf
+2025-10-04 18:00:02,088 - INFO - Processing W29316.pdf
+2025-10-04 18:00:05,312 - INFO - Geocoded 'OF' to 40.947642, 40.2694068
+2025-10-04 18:00:05,348 - INFO - ✅ Successfully processed: W29316.pdf
+2025-10-04 18:00:05,349 - INFO - Processing: W29317.pdf
+2025-10-04 18:00:05,349 - INFO - Processing W29317.pdf
+2025-10-04 18:00:08,651 - INFO - Geocoded 'OF' to 40.947642, 40.2694068
+2025-10-04 18:00:08,684 - INFO - ✅ Successfully processed: W29317.pdf
+2025-10-04 18:00:08,684 - INFO - Processing: W29334.pdf
+2025-10-04 18:00:08,684 - INFO - Processing W29334.pdf
+2025-10-04 18:00:11,190 - INFO - Geocoded ' County, TX' to 31.2183272, -96.7828793
+2025-10-04 18:00:11,243 - INFO - ✅ Successfully processed: W29334.pdf
+2025-10-04 18:00:11,244 - INFO - Processing: W30188.pdf
+2025-10-04 18:00:11,244 - INFO - Processing W30188.pdf
+2025-10-04 18:00:12,379 - INFO - ✅ Successfully processed: W30188.pdf
+2025-10-04 18:00:12,379 - INFO - Processing: W30189.pdf
+2025-10-04 18:00:12,379 - INFO - Processing W30189.pdf
+2025-10-04 18:00:16,559 - INFO - Geocoded ', ND' to 47.6201461, -100.540737
+2025-10-04 18:00:16,604 - INFO - ✅ Successfully processed: W30189.pdf
+2025-10-04 18:00:16,604 - INFO - Processing: W30789.pdf
+2025-10-04 18:00:16,604 - INFO - Processing W30789.pdf
+2025-10-04 18:00:18,311 - INFO - Geocoded ' County, of' to 46.005537, -112.6160475
+2025-10-04 18:00:18,355 - INFO - ✅ Successfully processed: W30789.pdf
+2025-10-04 18:00:18,355 - INFO - Processing: W36047.pdf
+2025-10-04 18:00:18,356 - INFO - Processing W36047.pdf
+2025-10-04 18:00:22,785 - WARNING - No coordinates found for pdf_data/W36047.pdf
+2025-10-04 18:00:22,846 - INFO - ✅ Successfully processed: W36047.pdf
+2025-10-04 18:00:22,846 - INFO - Processing: W90244.pdf
+2025-10-04 18:00:22,846 - INFO - Processing W90244.pdf
+2025-10-04 18:00:26,140 - INFO - Geocoded 'Sheridan County, TX' to 29.4938849, -96.6736063
+2025-10-04 18:00:26,165 - INFO - ✅ Successfully processed: W90244.pdf
+2025-10-04 18:00:26,166 - INFO - Processing: W90258.pdf
+2025-10-04 18:00:26,166 - INFO - Processing W90258.pdf
+2025-10-04 18:00:28,755 - INFO - Geocoded 'OF' to 40.947642, 40.2694068
+2025-10-04 18:00:28,761 - INFO - ✅ Successfully processed: W90258.pdf
+2025-10-04 18:00:28,761 - INFO - Processing: W90329.pdf
+2025-10-04 18:00:28,761 - INFO - Processing W90329.pdf
+2025-10-04 18:00:30,005 - INFO - Geocoded 'OF' to 40.947642, 40.2694068
+2025-10-04 18:00:30,018 - INFO - ✅ Successfully processed: W90329.pdf
+2025-10-04 18:00:30,023 - INFO - 📊 Processing Summary saved to: step1_output/processing_summary.json
+2025-10-04 18:05:26,229 - INFO - Processing W28756.pdf
+2025-10-04 18:14:07,359 - INFO - Initializing Enhanced PDF Processor...
+2025-10-04 18:14:07,396 - INFO - Processing: W11745.pdf
+2025-10-04 18:14:07,396 - INFO - Processing W11745.pdf
+2025-10-04 18:14:08,938 - INFO - Geocoded 'Colorado' to 38.7251776, -105.607716
+2025-10-04 18:14:08,942 - INFO - ✅ Successfully processed: W11745.pdf
+2025-10-04 18:14:08,942 - INFO - Processing: W11920.pdf
+2025-10-04 18:14:08,943 - INFO - Processing W11920.pdf
+2025-10-04 18:14:10,377 - INFO - Geocoded 'Colorado' to 38.7251776, -105.607716
+2025-10-04 18:14:10,382 - INFO - ✅ Successfully processed: W11920.pdf
+2025-10-04 18:14:10,382 - INFO - Processing: W15358.pdf
+2025-10-04 18:14:10,382 - INFO - Processing W15358.pdf
+2025-10-04 18:14:13,031 - INFO - Geocoded 'Colorado' to 38.7251776, -105.607716
+2025-10-04 18:14:13,036 - INFO - ✅ Successfully processed: W15358.pdf
+2025-10-04 18:14:13,036 - INFO - Processing: W20197.pdf
+2025-10-04 18:14:13,036 - INFO - Processing W20197.pdf
+2025-10-04 18:14:13,602 - INFO - ✅ Successfully processed: W20197.pdf
+2025-10-04 18:14:13,603 - INFO - Processing: W20407.pdf
+2025-10-04 18:14:13,603 - INFO - Processing W20407.pdf
+2025-10-04 18:14:13,800 - INFO - ✅ Successfully processed: W20407.pdf
+2025-10-04 18:14:13,801 - INFO - Processing: W20863.pdf
+2025-10-04 18:14:13,801 - INFO - Processing W20863.pdf
+2025-10-04 18:14:13,971 - INFO - ✅ Successfully processed: W20863.pdf
+2025-10-04 18:14:13,971 - INFO - Processing: W20864.pdf
+2025-10-04 18:14:13,971 - INFO - Processing W20864.pdf
+2025-10-04 18:14:14,159 - INFO - ✅ Successfully processed: W20864.pdf
+2025-10-04 18:14:14,159 - INFO - Processing: W21266.pdf
+2025-10-04 18:14:14,159 - INFO - Processing W21266.pdf
+2025-10-04 18:14:14,288 - INFO - ✅ Successfully processed: W21266.pdf
+2025-10-04 18:14:14,288 - INFO - Processing: W21796.pdf
+2025-10-04 18:14:14,288 - INFO - Processing W21796.pdf
+2025-10-04 18:14:16,610 - WARNING - No coordinates found for pdf_data/W21796.pdf
+2025-10-04 18:14:16,631 - INFO - ✅ Successfully processed: W21796.pdf
+2025-10-04 18:14:16,631 - INFO - Processing: W22099.pdf
+2025-10-04 18:14:16,631 - INFO - Processing W22099.pdf
+2025-10-04 18:14:17,720 - INFO - ✅ Successfully processed: W22099.pdf
+2025-10-04 18:14:17,720 - INFO - Processing: W22220.pdf
+2025-10-04 18:14:17,720 - INFO - Processing W22220.pdf
+2025-10-04 18:14:18,035 - INFO - ✅ Successfully processed: W22220.pdf
+2025-10-04 18:14:18,035 - INFO - Processing: W22221.pdf
+2025-10-04 18:14:18,035 - INFO - Processing W22221.pdf
+2025-10-04 18:14:18,878 - INFO - ✅ Successfully processed: W22221.pdf
+2025-10-04 18:14:18,879 - INFO - Processing: W22247.pdf
+2025-10-04 18:14:18,879 - INFO - Processing W22247.pdf
+2025-10-04 18:14:19,018 - INFO - ✅ Successfully processed: W22247.pdf
+2025-10-04 18:14:19,018 - INFO - Processing: W22249.pdf
+2025-10-04 18:14:19,018 - INFO - Processing W22249.pdf
+2025-10-04 18:14:19,178 - INFO - ✅ Successfully processed: W22249.pdf
+2025-10-04 18:14:19,178 - INFO - Processing: W22731.pdf
+2025-10-04 18:14:19,178 - INFO - Processing W22731.pdf
+2025-10-04 18:14:19,631 - INFO - ✅ Successfully processed: W22731.pdf
+2025-10-04 18:14:19,631 - INFO - Processing: W22740.pdf
+2025-10-04 18:14:19,631 - INFO - Processing W22740.pdf
+2025-10-04 18:14:20,292 - INFO - ✅ Successfully processed: W22740.pdf
+2025-10-04 18:14:20,292 - INFO - Processing: W23230.pdf
+2025-10-04 18:14:20,292 - INFO - Processing W23230.pdf
+2025-10-04 18:14:20,863 - INFO - ✅ Successfully processed: W23230.pdf
+2025-10-04 18:14:20,863 - INFO - Processing: W23359.pdf
+2025-10-04 18:14:20,863 - INFO - Processing W23359.pdf
+2025-10-04 18:14:24,869 - INFO - Geocoded 'Oklahoma' to 34.9550817, -97.2684063
+2025-10-04 18:14:24,895 - INFO - ✅ Successfully processed: W23359.pdf
+2025-10-04 18:14:24,895 - INFO - Processing: W23360.pdf
+2025-10-04 18:14:24,895 - INFO - Processing W23360.pdf
+2025-10-04 18:14:25,657 - INFO - ✅ Successfully processed: W23360.pdf
+2025-10-04 18:14:25,657 - INFO - Processing: W23361.pdf
+2025-10-04 18:14:25,657 - INFO - Processing W23361.pdf
+2025-10-04 18:14:26,146 - INFO - ✅ Successfully processed: W23361.pdf
+2025-10-04 18:14:26,146 - INFO - Processing: W23362.pdf
+2025-10-04 18:14:26,146 - INFO - Processing W23362.pdf
+2025-10-04 18:14:26,895 - INFO - ✅ Successfully processed: W23362.pdf
+2025-10-04 18:14:26,895 - INFO - Processing: W23363.pdf
+2025-10-04 18:14:26,895 - INFO - Processing W23363.pdf
+2025-10-04 18:14:27,635 - INFO - ✅ Successfully processed: W23363.pdf
+2025-10-04 18:14:27,635 - INFO - Processing: W23364.pdf
+2025-10-04 18:14:27,636 - INFO - Processing W23364.pdf
+2025-10-04 18:14:28,510 - INFO - ✅ Successfully processed: W23364.pdf
+2025-10-04 18:14:28,510 - INFO - Processing: W23365.pdf
+2025-10-04 18:14:28,510 - INFO - Processing W23365.pdf
+2025-10-04 18:14:28,755 - INFO - ✅ Successfully processed: W23365.pdf
+2025-10-04 18:14:28,755 - INFO - Processing: W23366.pdf
+2025-10-04 18:14:28,756 - INFO - Processing W23366.pdf
+2025-10-04 18:14:33,313 - INFO - Geocoded 'Oklahoma' to 34.9550817, -97.2684063
+2025-10-04 18:14:33,346 - INFO - ✅ Successfully processed: W23366.pdf
+2025-10-04 18:14:33,346 - INFO - Processing: W23367.pdf
+2025-10-04 18:14:33,346 - INFO - Processing W23367.pdf
+2025-10-04 18:14:34,145 - INFO - ✅ Successfully processed: W23367.pdf
+2025-10-04 18:14:34,145 - INFO - Processing: W23368.pdf
+2025-10-04 18:14:34,145 - INFO - Processing W23368.pdf
+2025-10-04 18:14:38,144 - INFO - Geocoded 'Oklahoma' to 34.9550817, -97.2684063
+2025-10-04 18:14:38,168 - INFO - ✅ Successfully processed: W23368.pdf
+2025-10-04 18:14:38,168 - INFO - Processing: W23369.pdf
+2025-10-04 18:14:38,168 - INFO - Processing W23369.pdf
+2025-10-04 18:14:38,904 - INFO - ✅ Successfully processed: W23369.pdf
+2025-10-04 18:14:38,904 - INFO - Processing: W23370.pdf
+2025-10-04 18:14:38,904 - INFO - Processing W23370.pdf
+2025-10-04 18:14:39,406 - INFO - ✅ Successfully processed: W23370.pdf
+2025-10-04 18:14:39,406 - INFO - Processing: W23371.pdf
+2025-10-04 18:14:39,406 - INFO - Processing W23371.pdf
+2025-10-04 18:14:40,068 - INFO - ✅ Successfully processed: W23371.pdf
+2025-10-04 18:14:40,069 - INFO - Processing: W23372.pdf
+2025-10-04 18:14:40,069 - INFO - Processing W23372.pdf
+2025-10-04 18:14:40,505 - INFO - ✅ Successfully processed: W23372.pdf
+2025-10-04 18:14:40,505 - INFO - Processing: W25156.pdf
+2025-10-04 18:14:40,505 - INFO - Processing W25156.pdf
+2025-10-04 18:14:41,655 - INFO - ✅ Successfully processed: W25156.pdf
+2025-10-04 18:14:41,655 - INFO - Processing: W25157.pdf
+2025-10-04 18:14:41,655 - INFO - Processing W25157.pdf
+2025-10-04 18:14:43,454 - INFO - Geocoded 'McKenzie 
+City 
+Oklahoma City County, OK' to 35.4661436, -97.524039
+2025-10-04 18:14:43,470 - INFO - ✅ Successfully processed: W25157.pdf
+2025-10-04 18:14:43,470 - INFO - Processing: W25158.pdf
+2025-10-04 18:14:43,470 - INFO - Processing W25158.pdf
+2025-10-04 18:14:43,843 - INFO - ✅ Successfully processed: W25158.pdf
+2025-10-04 18:14:43,843 - INFO - Processing: W25159.pdf
+2025-10-04 18:14:43,843 - INFO - Processing W25159.pdf
+2025-10-04 18:14:44,081 - INFO - ✅ Successfully processed: W25159.pdf
+2025-10-04 18:14:44,081 - INFO - Processing: W25160.pdf
+2025-10-04 18:14:44,081 - INFO - Processing W25160.pdf
+2025-10-04 18:14:44,283 - INFO - ✅ Successfully processed: W25160.pdf
+2025-10-04 18:14:44,283 - INFO - Processing: W25571.pdf
+2025-10-04 18:14:44,283 - INFO - Processing W25571.pdf
+2025-10-04 18:14:44,999 - INFO - ✅ Successfully processed: W25571.pdf
+2025-10-04 18:14:44,999 - INFO - Processing: W28190.pdf
+2025-10-04 18:14:44,999 - INFO - Processing W28190.pdf
+2025-10-04 18:14:45,926 - INFO - ✅ Successfully processed: W28190.pdf
+2025-10-04 18:14:45,926 - INFO - Processing: W28194.pdf
+2025-10-04 18:14:45,926 - INFO - Processing W28194.pdf
+2025-10-04 18:14:46,702 - INFO - ✅ Successfully processed: W28194.pdf
+2025-10-04 18:14:46,702 - INFO - Processing: W28303.pdf
+2025-10-04 18:14:46,703 - INFO - Processing W28303.pdf
+2025-10-04 18:14:47,464 - INFO - ✅ Successfully processed: W28303.pdf
+2025-10-04 18:14:47,465 - INFO - Processing: W28342.pdf
+2025-10-04 18:14:47,465 - INFO - Processing W28342.pdf
+2025-10-04 18:14:48,205 - INFO - ✅ Successfully processed: W28342.pdf
+2025-10-04 18:14:48,205 - INFO - Processing: W28394.pdf
+2025-10-04 18:14:48,205 - INFO - Processing W28394.pdf
+2025-10-04 18:14:48,681 - INFO - ✅ Successfully processed: W28394.pdf
+2025-10-04 18:14:48,681 - INFO - Processing: W28425.pdf
+2025-10-04 18:14:48,682 - INFO - Processing W28425.pdf
+2025-10-04 18:14:49,261 - INFO - ✅ Successfully processed: W28425.pdf
+2025-10-04 18:14:49,261 - INFO - Processing: W28554.pdf
+2025-10-04 18:14:49,261 - INFO - Processing W28554.pdf
+2025-10-04 18:14:49,770 - INFO - ✅ Successfully processed: W28554.pdf
+2025-10-04 18:14:49,770 - INFO - Processing: W28557.pdf
+2025-10-04 18:14:49,770 - INFO - Processing W28557.pdf
+2025-10-04 18:14:50,375 - INFO - ✅ Successfully processed: W28557.pdf
+2025-10-04 18:14:50,375 - INFO - Processing: W28599.pdf
+2025-10-04 18:14:50,375 - INFO - Processing W28599.pdf
+2025-10-04 18:14:51,521 - INFO - ✅ Successfully processed: W28599.pdf
+2025-10-04 18:14:51,521 - INFO - Processing: W28600.pdf
+2025-10-04 18:14:51,521 - INFO - Processing W28600.pdf
+2025-10-04 18:14:52,387 - INFO - ✅ Successfully processed: W28600.pdf
+2025-10-04 18:14:52,387 - INFO - Processing: W28601.pdf
+2025-10-04 18:14:52,387 - INFO - Processing W28601.pdf
+2025-10-04 18:14:53,123 - INFO - ✅ Successfully processed: W28601.pdf
+2025-10-04 18:14:53,123 - INFO - Processing: W28633.pdf
+2025-10-04 18:14:53,123 - INFO - Processing W28633.pdf
+2025-10-04 18:14:55,043 - INFO - Geocoded 'Mckenzie County, TX' to 35.42772, -101.1855024
+2025-10-04 18:14:55,089 - INFO - ✅ Successfully processed: W28633.pdf
+2025-10-04 18:14:55,090 - INFO - Processing: W28634.pdf
+2025-10-04 18:14:55,090 - INFO - Processing W28634.pdf
+2025-10-04 18:14:55,748 - INFO - ✅ Successfully processed: W28634.pdf
+2025-10-04 18:14:55,748 - INFO - Processing: W28636.pdf
+2025-10-04 18:14:55,748 - INFO - Processing W28636.pdf
+2025-10-04 18:14:56,576 - INFO - ✅ Successfully processed: W28636.pdf
+2025-10-04 18:14:56,576 - INFO - Processing: W28637.pdf
+2025-10-04 18:14:56,576 - INFO - Processing W28637.pdf
+2025-10-04 18:14:57,453 - INFO - ✅ Successfully processed: W28637.pdf
+2025-10-04 18:14:57,453 - INFO - Processing: W28648.pdf
+2025-10-04 18:14:57,453 - INFO - Processing W28648.pdf
+2025-10-04 18:14:58,272 - INFO - ✅ Successfully processed: W28648.pdf
+2025-10-04 18:14:58,273 - INFO - Processing: W28649.pdf
+2025-10-04 18:14:58,273 - INFO - Processing W28649.pdf
+2025-10-04 18:14:59,149 - INFO - ✅ Successfully processed: W28649.pdf
+2025-10-04 18:14:59,149 - INFO - Processing: W28651.pdf
+2025-10-04 18:14:59,149 - INFO - Processing W28651.pdf
+2025-10-04 18:14:59,714 - INFO - ✅ Successfully processed: W28651.pdf
+2025-10-04 18:14:59,714 - INFO - Processing: W28652.pdf
+2025-10-04 18:14:59,714 - INFO - Processing W28652.pdf
+2025-10-04 18:15:00,598 - INFO - ✅ Successfully processed: W28652.pdf
+2025-10-04 18:15:00,598 - INFO - Processing: W28654.pdf
+2025-10-04 18:15:00,598 - INFO - Processing W28654.pdf
+2025-10-04 18:15:01,340 - INFO - ✅ Successfully processed: W28654.pdf
+2025-10-04 18:15:01,340 - INFO - Processing: W28655.pdf
+2025-10-04 18:15:01,340 - INFO - Processing W28655.pdf
+2025-10-04 18:15:02,032 - INFO - ✅ Successfully processed: W28655.pdf
+2025-10-04 18:15:02,032 - INFO - Processing: W28658.pdf
+2025-10-04 18:15:02,032 - INFO - Processing W28658.pdf
+2025-10-04 18:15:02,934 - INFO - ✅ Successfully processed: W28658.pdf
+2025-10-04 18:15:02,934 - INFO - Processing: W28744.pdf
+2025-10-04 18:15:02,934 - INFO - Processing W28744.pdf
+2025-10-04 18:15:03,494 - INFO - ✅ Successfully processed: W28744.pdf
+2025-10-04 18:15:03,494 - INFO - Processing: W28754.pdf
+2025-10-04 18:15:03,494 - INFO - Processing W28754.pdf
+2025-10-04 18:15:04,371 - INFO - ✅ Successfully processed: W28754.pdf
+2025-10-04 18:15:04,372 - INFO - Processing: W28755.pdf
+2025-10-04 18:15:04,372 - INFO - Processing W28755.pdf
+2025-10-04 18:15:05,239 - INFO - ✅ Successfully processed: W28755.pdf
+2025-10-04 18:15:05,240 - INFO - Processing: W28756.pdf
+2025-10-04 18:15:05,240 - INFO - Processing W28756.pdf
+2025-10-04 18:15:06,106 - INFO - ✅ Successfully processed: W28756.pdf
+2025-10-04 18:15:06,106 - INFO - Processing: W28976.pdf
+2025-10-04 18:15:06,106 - INFO - Processing W28976.pdf
+2025-10-04 18:15:06,648 - INFO - ✅ Successfully processed: W28976.pdf
+2025-10-04 18:15:06,648 - INFO - Processing: W28978.pdf
+2025-10-04 18:15:06,648 - INFO - Processing W28978.pdf
+2025-10-04 18:15:07,197 - INFO - ✅ Successfully processed: W28978.pdf
+2025-10-04 18:15:07,197 - INFO - Processing: W29242.pdf
+2025-10-04 18:15:07,197 - INFO - Processing W29242.pdf
+2025-10-04 18:15:08,206 - INFO - ✅ Successfully processed: W29242.pdf
+2025-10-04 18:15:08,206 - INFO - Processing: W29244.pdf
+2025-10-04 18:15:08,206 - INFO - Processing W29244.pdf
+2025-10-04 18:15:09,080 - INFO - ✅ Successfully processed: W29244.pdf
+2025-10-04 18:15:09,080 - INFO - Processing: W29316.pdf
+2025-10-04 18:15:09,080 - INFO - Processing W29316.pdf
+2025-10-04 18:15:09,694 - INFO - ✅ Successfully processed: W29316.pdf
+2025-10-04 18:15:09,694 - INFO - Processing: W29317.pdf
+2025-10-04 18:15:09,694 - INFO - Processing W29317.pdf
+2025-10-04 18:15:10,303 - INFO - ✅ Successfully processed: W29317.pdf
+2025-10-04 18:15:10,303 - INFO - Processing: W29334.pdf
+2025-10-04 18:15:10,303 - INFO - Processing W29334.pdf
+2025-10-04 18:15:11,239 - INFO - ✅ Successfully processed: W29334.pdf
+2025-10-04 18:15:11,239 - INFO - Processing: W30188.pdf
+2025-10-04 18:15:11,239 - INFO - Processing W30188.pdf
+2025-10-04 18:15:12,332 - INFO - ✅ Successfully processed: W30188.pdf
+2025-10-04 18:15:12,332 - INFO - Processing: W30189.pdf
+2025-10-04 18:15:12,332 - INFO - Processing W30189.pdf
+2025-10-04 18:15:13,441 - INFO - ✅ Successfully processed: W30189.pdf
+2025-10-04 18:15:13,441 - INFO - Processing: W30789.pdf
+2025-10-04 18:15:13,441 - INFO - Processing W30789.pdf
+2025-10-04 18:15:14,087 - WARNING - No coordinates found for pdf_data/W30789.pdf
+2025-10-04 18:15:14,114 - INFO - ✅ Successfully processed: W30789.pdf
+2025-10-04 18:15:14,114 - INFO - Processing: W36047.pdf
+2025-10-04 18:15:14,114 - INFO - Processing W36047.pdf
+2025-10-04 18:15:15,145 - INFO - ✅ Successfully processed: W36047.pdf
+2025-10-04 18:15:15,145 - INFO - Processing: W90244.pdf
+2025-10-04 18:15:15,145 - INFO - Processing W90244.pdf
+2025-10-04 18:15:15,845 - INFO - ✅ Successfully processed: W90244.pdf
+2025-10-04 18:15:15,846 - INFO - Processing: W90258.pdf
+2025-10-04 18:15:15,846 - INFO - Processing W90258.pdf
+2025-10-04 18:15:15,990 - INFO - ✅ Successfully processed: W90258.pdf
+2025-10-04 18:15:15,990 - INFO - Processing: W90329.pdf
+2025-10-04 18:15:15,990 - INFO - Processing W90329.pdf
+2025-10-04 18:15:16,090 - INFO - ✅ Successfully processed: W90329.pdf
+2025-10-04 18:15:16,097 - INFO - 📊 Processing Summary saved to: step1_output/processing_summary.json
