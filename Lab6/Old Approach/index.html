@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Oil Wells Map</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <style>
+    body { margin:0; font-family: Arial, sans-serif; }
+    #map { height: 100vh; width: 100%; }
+    #status {
+      position: absolute;
+      top: 10px; left: 50%;
+      transform: translateX(-50%);
+      background: rgba(255,255,255,0.9);
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 14px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      z-index: 1000;
+    }
+    .popup-content { line-height: 1.4; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <div id="status">Loading wells…</div>
+  <div id="map"></div>
+
+  <script>
+    const map = L.map("map").setView([48.0, -103.5], 7);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 18,
+      attribution: "© OpenStreetMap contributors"
+    }).addTo(map);
+
+    fetch("/api/wells")
+      .then(r => {
+        if (!r.ok) throw new Error("API error " + r.status);
+        return r.json();
+      })
+      .then(data => {
+        let plotted = 0;
+        const bounds = [];
+
+        data.forEach(well => {
+          const lat = well.latitude;
+          const lon = well.longitude;
+          if (lat !== null && lon !== null) {
+            plotted++;
+            const marker = L.marker([lat, lon]).addTo(map);
+            bounds.push([lat, lon]);
+
+            const popup = `
+              <div class="popup-content">
+                <b>${well.well_name || 'Unknown'}</b><br/>
+                <b>API:</b> ${well.api_number || 'N/A'}<br/>
+                <b>Operator:</b> ${well.operator_name || 'N/A'}<br/>
+                <b>Datum:</b> ${well.datum || 'N/A'}<br/>
+                <b>Surface Location:</b> ${well.surface_hole_location || 'N/A'}
+              </div>`;
+            marker.bindPopup(popup);
+          }
+        });
+
+        // Update status
+        document.getElementById("status").textContent =
+          `Plotted ${plotted} wells with valid coordinates`;
+
+        // Auto-zoom to fit all markers
+        if (bounds.length > 0) {
+          map.fitBounds(bounds, { padding: [40, 40] });
+        }
+      })
+      .catch(err => {
+        console.error("Error loading data:", err);
+        document.getElementById("status").textContent =
+          "Failed to load wells: " + err.message;
+      });
+  </script>
+</body>
+</html>
