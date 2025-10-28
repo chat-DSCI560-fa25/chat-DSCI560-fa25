@@ -1,6 +1,6 @@
 # lab9 — PDF → Embeddings → FAISS → Conversational QA
 
-This folder contains a single script `data_collection_openai_api.py` that implements a pipeline to:
+This folder contains a single script `App_p2_openai_freequota.py` that implements a pipeline to:
 
 1. Extract text from PDFs in `lab9/pdfs`
 2. Chunk the text (500 chars, 50 overlap)
@@ -131,13 +131,13 @@ This will extract text, chunk it, and save `lab9/chunks.json`.
 
 ```bash
 # make sure OPENAI_API_KEY is set in lab9/.env or exported
-python3 lab9/data_collection_openai_api.py --pdf-dir lab9/pdfs --vectorstore lab9/faiss_openai --sample 50
+python3 lab9/App_p2_openai_freequota.py --pdf-dir lab9/pdfs --vectorstore lab9/faiss_openai --sample 50
 ```
 
 3) Full run (build embeddings for all chunks and enter REPL):
 
 ```bash
-python3 lab9/data_collection_openai_api.py --pdf-dir lab9/pdfs --vectorstore lab9/faiss_openai
+python3 lab9/App_p2_openai_freequota.py --pdf-dir lab9/pdfs --vectorstore lab9/faiss_openai
 ```
 
 When the FAISS index is created the script will start an interactive REPL where you can ask questions. Type `exit` or `quit` to end.
@@ -155,7 +155,7 @@ Run with Hugging Face Inference API
 - Example command (embed first 50 chunks for testing):
 
 ```bash
-python3 lab9/data_collection_openai_api.py --pdf-dir lab9/pdfs --vectorstore lab9/faiss_openai --use-hf --sample 50
+python3 lab9/App_p2_openai_freequota.py --pdf-dir lab9/pdfs --vectorstore lab9/faiss_openai --use-hf --sample 50
 ```
 
 - Notes:
@@ -178,33 +178,5 @@ python3 lab9/App_p2_openai_freequota.py --pdf-dir lab9/pdfs --vectorstore lab9/f
 - Notes:
 	- The script detects Azure configuration and uses Azure-compatible calls for embeddings and chat when `AZURE_OPENAI_ENDPOINT` and deployment names are provided.
 
----
 
-## Behavior and assignment mapping
-
-- Create vector datastore: implemented in `create_or_load_vectorstore(...)` which uses `OpenAIEmbeddings` and `FAISS.from_texts(...)`.
-- Create conversation chain: implemented in `create_qa_chain(...)` using `ConversationalRetrievalChain.from_llm(...)` + `ConversationBufferMemory` when LangChain is installed; fallback available.
-- Driver: `main()` performs extraction -> chunking -> vectorstore -> chain -> REPL. The loop exits on `exit` or `quit`.
-
-If your API requests were unlimited (sufficient quota and no rate limits), the script will complete the full pipeline end-to-end.
-
----
-
-## Troubleshooting
-
-- 429 / insufficient_quota from OpenAI: your account exhausted the free tier. Use `--sample N` to test with fewer chunks, or run locally with `sentence-transformers`.
-- HF 403 Forbidden: your HF token may not have Inference access for the requested model. Create a new HF token with the correct scopes.
-- FAISS import errors: ensure `faiss-cpu` is installed for your platform.
-
----
-
-## Suggested next steps (optional)
-
-- Add a `--force-local` flag to use `sentence-transformers` locally.
-- Add persistent conversation history (file/DB) if you want conversation state across runs.
-- Add a small `requirements.txt` for reproducible installs.
-
----
-
-If you want, I can produce a minimal submission-ready `data_collection_openai_api_minimal.py` with all non-OpenAI code removed.
 
