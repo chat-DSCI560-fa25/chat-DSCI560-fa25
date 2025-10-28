@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  lab9:
+    build: .
+    container_name: lab9_container
+    volumes:
+      # Mount your current folder into the container's /app directory
+      - .:/app
+      # Mount your local pdf_files folder
+      - ./pdf_files:/app/pdf_files
+      # Mount your local models folder
+      - ./models:/app/models
+    # Keep the container running in the background
+    command: tail -f /dev/null
